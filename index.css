@@ -12,16 +12,52 @@ section {
 }
 section .portfolio-section-row {
   max-width: 768px;
-  margin: 0 auto;
+  margin: 50px auto;
+}
+section p {
+  margin-top: 20px;
+}
+.section-shadow {
+  box-shadow: 0px 0px 7px #333333;
+}
+.hero-section {
+  position: relative;
+  z-index: 100;
+  box-shadow: 0px 0px 7px #333333;
+}
+.about-section {
+  position: relative;
+  z-index: 90;
+  box-shadow: 0px 0px 7px #333333;
+}
+.projects-section {
+  position: relative;
+  z-index: 80;
+  box-shadow: 0px 0px 7px #333333;
+}
+.testimonials-section {
+  position: relative;
+  z-index: 70;
+  box-shadow: 0px 0px 7px #333333;
+}
+.skills-section {
+  position: relative;
+  z-index: 60;
+  box-shadow: 0px 0px 7px #333333;
+}
+.contact-section {
+  position: relative;
+  z-index: 50;
+  box-shadow: 0px 0px 7px #333333;
 }
 
 /*=== typography ===*/
 h1 {
-  font-size: 42px;
+  font-size: 60px;
   font-weight: bold;
 }
 h2 {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: bold;
 }
 p {
@@ -43,19 +79,46 @@ button {
 
 
 /*=== color scheme ===*/
-.dark-gray {
+.white-bg {
+  background-color: #ffffff;
+}
+.black-bg {
+  background-color: #000000;
+}
+.dark-gray-bg {
+  background-color: #5d5c61;
+}
+.light-gray-bg {
+  background-color: #928e94;
+}
+.light-blue-bg {
+  background-color: #7395ae;
+}
+.dark-blue-bg {
+  background-color: #557a95;
+}
+.sand-bg {
+  background-color: #b1a296;
+}
+.white-font {
+  color: #ffffff;
+}
+.black-font {
+  color: #000000;
+}
+.dark-gray-font {
   color: #5d5c61;
 }
-.light-gray {
+.light-gray-font {
   color: #928e94;
 }
-.light-blue {
+.light-blue-font {
   color: #7395ae;
 }
-.dark-blue {
+.dark-blue-font {
   color: #557a95;
 }
-.sand {
+.sand-font {
   color: #b1a296;
 }
 
@@ -64,7 +127,6 @@ button {
 .portfolio-navigation {
   position: fixed;
   width: 100%;
-  box-shadow: 0px 0px 7px #333333;
   z-index: 1000;
   background-color: transparent;
   color: #ffffff;
@@ -128,7 +190,7 @@ button {
   cursor: pointer;
 }
 .hero-section .heading-container button:focus {
-  
+
 }
 
 /*=== hero heading animations ===*/
@@ -168,4 +230,11 @@ button {
   animation-fill-mode: forwards;
   transform: translate(0, calc(-100% - 30px));
   margin-top: 30px;
+}
+
+
+
+
+.hero-section {
+  color: #ffffff;
 }
