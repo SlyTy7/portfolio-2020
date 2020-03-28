@@ -1,0 +1,171 @@
+/*=== base styles ===*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+section {
+  padding: 20px;
+}
+section .portfolio-section-row {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/*=== typography ===*/
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+}
+nav {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+button {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*=== color scheme ===*/
+.dark-gray {
+  color: #5d5c61;
+}
+.light-gray {
+  color: #928e94;
+}
+.light-blue {
+  color: #7395ae;
+}
+.dark-blue {
+  color: #557a95;
+}
+.sand {
+  color: #b1a296;
+}
+
+
+/*=== navbar ===*/
+.portfolio-navigation {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 7px #333333;
+  z-index: 1000;
+  background-color: transparent;
+  color: #ffffff;
+  transition: .4s;
+}
+.portfolio-navigation ul {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  min-height: 60px;
+  max-width: 768px;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.portfolio-navigation ul li {
+  display: inline-flex;
+}
+.portfolio-navigation ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*=== hero ===*/
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/kimson-doan-background-scaled.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+.hero-section .heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+}
+.hero-section .heading-container h1 {
+  color: white;
+}
+.hero-section .heading-container hr {
+  max-width: 400px;
+  width: 100%;
+  border: solid #ffffff 2px;
+  margin : 10px auto;
+}
+.hero-section .heading-container .bottom-button {}
+.hero-section .heading-container button {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 3px;
+  border: solid #ffffff 2px;
+  padding: 10px 30px;
+  transition: .4s;
+}
+.hero-section .heading-container button:hover {
+  background: #b1a296;
+  border: solid #b1a296 2px;
+  cursor: pointer;
+}
+.hero-section .heading-container button:focus {
+  
+}
+
+/*=== hero heading animations ===*/
+@keyframes slideUp {
+  0% { transform: translate3d(0, 100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes slideDown {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.hero-section .heading-container .top-heading,
+.hero-section .heading-container .bottom-heading,
+.hero-section .heading-container .bottom-button {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.hero-section .heading-container .bottom-button {}
+.hero-section .heading-container .top-heading h1 {
+  animation: slideUp .6s;
+  animation-delay: .75s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, -100%);
+}
+.hero-section .heading-container .bottom-heading h1 {
+  animation: slideDown .6s;
+  animation-delay: 1.35s;
+  animation-fill-mode: forwards;
+  transform: translate(0, -100%);
+}
+.hero-section .heading-container .bottom-button button {
+  animation: slideDown .6s;
+  animation-delay: 1.95s;
+  animation-fill-mode: forwards;
+  transform: translate(0, calc(-100% - 30px));
+  margin-top: 30px;
+}
