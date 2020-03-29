@@ -7,6 +7,11 @@
     window.addEventListener("load", () => {});
     window.addEventListener("scroll", handleWindowScroll);
 
+    const navButtons = document.querySelectorAll("nav a");
+    navButtons.forEach(button => {
+      button.addEventListener("click", handleNavClick);
+    });
+
     const heroButton = document.querySelector("#heading-button");
     heroButton.addEventListener("click", handelHeroButtonClick);
   };
@@ -14,6 +19,18 @@
   const handleWindowScroll = () => {
     navScrollFade();
     heroScrollParallax();
+  };
+
+  const handleNavClick = e => {
+    const button = e.target;
+    const selector = button.dataset.target;
+    const section = document.querySelector(`.${selector}`);
+
+    section.scrollIntoView({
+      behavior: 'smooth'
+    });
+
+    e.preventDefault();
   };
 
   const handelHeroButtonClick = () => {
