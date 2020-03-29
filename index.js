@@ -1,8 +1,6 @@
 (() => {
   const init = () => {
     addListeners();
-
-
   };
 
   const addListeners = () => {
@@ -14,8 +12,8 @@
   };
 
   const handleWindowScroll = () => {
-    navInit();
-    parallaxInit();
+    navScrollFade();
+    heroScrollParallax();
   };
 
   const handelHeroButtonClick = () => {
@@ -26,7 +24,7 @@
     });
   };
 
-  const navInit = () => {
+  const navScrollFade = () => {
     const nav = document.querySelector(".portfolio-navigation");
     const scrollPos = window.scrollY;
 
@@ -39,7 +37,7 @@
     }
   };
 
-  const parallaxInit = () => {
+  const heroScrollParallax = () => {
     const hero = document.querySelector(".hero-section");
     const scrollPos = window.scrollY;
     const newHeroPos = scrollPos / 3;
