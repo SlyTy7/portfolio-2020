@@ -158,6 +158,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px;
+  color: #ffffff;
 }
 .hero-section .heading-container {
   display: flex;
@@ -233,8 +234,25 @@ button {
 }
 
 
-
-
-.hero-section {
-  color: #ffffff;
+/*=== media queries ===*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .hero-section .heading-container hr {
+    max-width: 250px;
+  }
 }
