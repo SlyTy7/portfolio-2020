@@ -132,7 +132,8 @@ button {
   color: #ffffff;
   transition: .4s;
 }
-.portfolio-navigation ul {
+/* desktop menu */
+.portfolio-navigation ul.desktop-nav-menu {
   display: flex;
   flex-direction: row;
   padding: 10px;
@@ -143,12 +144,16 @@ button {
   align-items: center;
   justify-content: space-evenly;
 }
-.portfolio-navigation ul li {
+.portfolio-navigation ul.desktop-nav-menu li {
   display: inline-flex;
 }
-.portfolio-navigation ul li a {
+.portfolio-navigation ul.desktop-nav-menu li a {
   text-decoration: none;
   color: inherit;
+}
+/* mobile menu */
+.portfolio-navigation ul.mobile-nav-menu {
+  display: none;
 }
 
 /*=== hero ===*/
