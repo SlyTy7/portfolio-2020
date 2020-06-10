@@ -1,6 +1,7 @@
 (() => {
   const init = () => {
     addListeners();
+    startSlider();
   };
 
   const addListeners = () => {
@@ -60,6 +61,17 @@
     const newHeroPos = scrollPos / 3;
 
     hero.style.backgroundPosition = `center ${newHeroPos}px`;
+  };
+
+  const startSlider = () => {
+    // slick.js requires a jquery object
+    const sliderContainer = $(".testimonial-slider");
+
+    sliderContainer.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
   };
 
 
