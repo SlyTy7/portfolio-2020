@@ -5,62 +5,57 @@
   };
 
   const addListeners = () => {
-    window.addEventListener("load", () => {});
-    window.addEventListener("scroll", handleWindowScroll);
-
-    const navButtons = document.querySelectorAll("nav a");
-    navButtons.forEach(button => {
-      button.addEventListener("click", handleNavClick);
-    });
-
-    const heroButton = document.querySelector("#heading-button");
-    heroButton.addEventListener("click", handelHeroButtonClick);
+    addWindowScrollListener();
+    addNavButtonListener();
+    addHeroButtonListener();
   };
 
-  const handleWindowScroll = () => {
-    navScrollFade();
-    heroScrollParallax();
-  };
+  const addWindowScrollListener = () => {
+    const hero = $(".hero-section");
+    const nav = $(".portfolio-navigation");
 
-  const handleNavClick = e => {
-    const button = e.target;
-    const selector = button.dataset.target;
-    const section = document.querySelector(`.${selector}`);
+    $(window).scroll(e => {
+      const scrollPos = e.currentTarget.scrollY;
+      const newHeroPos = scrollPos / 3;
 
-    section.scrollIntoView({
-      behavior: 'smooth'
-    });
+      hero.css({"background-position": `center ${newHeroPos}px`});
 
-    e.preventDefault();
-  };
-
-  const handelHeroButtonClick = () => {
-    const projectsSection = document.querySelector(".projects-section");
-
-    projectsSection.scrollIntoView({
-      behavior: 'smooth'
+      if(scrollPos > 1){
+        nav.css({"background-color": "#557a95", "color": "#ffffff"});
+      } else {
+        nav.css({"background-color": "transparent", "color": "#ffffff"});
+      }
     });
   };
 
-  const navScrollFade = () => {
-    const nav = document.querySelector(".portfolio-navigation");
-    const scrollPos = window.scrollY;
+  const addNavButtonListener = () => {
+    const buttons = $("nav a");
 
-    if(scrollPos > 1 ){
-      nav.style.backgroundColor = "#557a95";
-      nav.style.color = "#ffffff";
-    } else {
-      nav.style.backgroundColor = "transparent";
-      nav.style.color = "#ffffff";
-    }
+    buttons.on("click", e => {
+      const buttonClicked = $(e.currentTarget);
+      const selector = buttonClicked.data().target;
+      const section = document.querySelector(`.${selector}`);
+
+      section.scrollIntoView({
+        behavior: 'smooth'
+      });
+
+      e.preventDefault();
+    });
   };
 
-  const heroScrollParallax = () => {
-    const hero = document.querySelector(".hero-section");
-    const scrollPos = window.scrollY;
-    const newHeroPos = scrollPos / 3;
+  const addHeroButtonListener = () => {
+    const button = $("#heading-button");
 
-    hero.style.backgroundPosition = `center ${newHeroPos}px`;
+    button.on("click", e => {
+      const projectsSection = document.querySelector(".projects-section");
+
+      projectsSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+
+      e.preventDefault();
+    });
   };
 
   const startSlider = () => {
