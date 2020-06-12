@@ -23,45 +23,9 @@ section p {
   line-height: 1.5;
 }
 
-
 .section-shadow {
   box-shadow: 0px 0px 7px #333333;
 }
-.hero-section {
-  position: relative;
-  z-index: 100;
-  box-shadow: 0px 0px 7px #333333;
-}
-/*
-.about-section {
-  position: relative;
-  z-index: 90;
-  box-shadow: 0px 0px 7px #333333;
-  display: flex;
-  flex-direction: column;
-}
-
-.projects-section {
-  position: relative;
-  z-index: 80;
-  box-shadow: 0px 0px 7px #333333;
-}
-.testimonials-section {
-  position: relative;
-  z-index: 70;
-  box-shadow: 0px 0px 7px #333333;
-}
-.skills-section {
-  position: relative;
-  z-index: 60;
-  box-shadow: 0px 0px 7px #333333;
-}
-.contact-section {
-  position: relative;
-  z-index: 50;
-  box-shadow: 0px 0px 7px #333333;
-}
-*/
 
 
 /*=== typography ===*/
@@ -70,8 +34,9 @@ h1 {
   font-weight: 800;
 }
 h2 {
-  font-size: 34px;
+  font-size: 50px;
   font-weight: 800;
+  text-shadow: 2px 2px 0px #333333, 3px 3px 0px #333333, 1px 1px 0px #333333, 4px 4px 0px #333333;
 }
 p {
   font-size: 16px;
@@ -169,7 +134,10 @@ button {
   display: none;
 }
 
-/*=== hero ===*/
+
+
+
+/*=== hero section ===*/
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/kimson-doan-background-scaled.jpg");
   background-position: center top;
@@ -177,6 +145,8 @@ button {
   background-repeat: no-repeat;
   padding: 20px;
   color: #ffffff;
+  position: relative;
+  z-index: 100;
 }
 .hero-section .heading-container {
   display: flex;
@@ -208,9 +178,7 @@ button {
   border: solid #b1a296 2px;
   cursor: pointer;
 }
-.hero-section .heading-container button:focus {
-
-}
+.hero-section .heading-container button:focus {}
 
 /*=== hero heading animations ===*/
 @keyframes slideUp {
@@ -257,14 +225,13 @@ button {
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
-  position: relative;
-  z-index: 90;
-  box-shadow: 0px 0px 7px #333333;
 }
 
 
 /*=== skills section ===*/
-.skills-section {}
+.skills-section {
+  position: relative;
+}
 .skills-section .portfolio-section-row {
   width: 100%;
   padding: 60px 30px;
@@ -318,10 +285,34 @@ button {
 
 
 
+/*=== projects section ===*/
+.projects-section {
+  padding-bottom: 80px;
+}
 
 
+.projects-sub-section {
+  position: relative;
+}
+.projects-sub-section .portfolio-section-row {
+  margin-top: -100px;
+}
+.projects-sub-section .portfolio-section-row ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projects-sub-section .portfolio-section-row ul li {
+  min-height: 200px;
+  width: 30%;
+  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  margin: 10px auto;
+  border-radius: 5px;
+}
 
-/*=== testimonial slides ===*/
+/*=== testimonial section ===*/
 .slick-slide {
   padding: 30px;
 }
@@ -329,6 +320,16 @@ button {
   padding-left: 30px;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
 }
+
+
+
+
+
+
+
+
+
+
 
 /*=== media queries ===*/
 @media (max-width: 768px) {
