@@ -256,7 +256,7 @@ button {
 .about-section {
   display: flex;
   flex-direction: column;
-  padding-bottom: 180px;
+  padding-bottom: 80px;
   position: relative;
   z-index: 90;
   box-shadow: 0px 0px 7px #333333;
@@ -264,12 +264,13 @@ button {
 
 
 /*=== skills section ===*/
+.skills-section {}
 .skills-section .portfolio-section-row {
   width: 100%;
-  padding: 30px;
+  padding: 60px 30px;
   border-radius: 5px;
   border: solid 1px #ddd;
-  margin-top: -160px;
+  margin-top: -100px;
   position: relative;
   z-index: 100;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
