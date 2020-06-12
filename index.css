@@ -12,15 +12,18 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 40vh;
 }
 section .portfolio-section-row {
+  width: 100%;
   max-width: 768px;
   margin: 50px auto;
 }
 section p {
   margin-top: 20px;
+  line-height: 1.5;
 }
+
+
 .section-shadow {
   box-shadow: 0px 0px 7px #333333;
 }
@@ -29,11 +32,15 @@ section p {
   z-index: 100;
   box-shadow: 0px 0px 7px #333333;
 }
+/*
 .about-section {
   position: relative;
   z-index: 90;
   box-shadow: 0px 0px 7px #333333;
+  display: flex;
+  flex-direction: column;
 }
+
 .projects-section {
   position: relative;
   z-index: 80;
@@ -54,6 +61,8 @@ section p {
   z-index: 50;
   box-shadow: 0px 0px 7px #333333;
 }
+*/
+
 
 /*=== typography ===*/
 h1 {
@@ -61,8 +70,8 @@ h1 {
   font-weight: 800;
 }
 h2 {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: 800;
 }
 p {
   font-size: 16px;
@@ -242,6 +251,42 @@ button {
   margin-top: 30px;
 }
 
+
+/*=== about section ===*/
+.about-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 180px;
+  position: relative;
+  z-index: 90;
+  box-shadow: 0px 0px 7px #333333;
+}
+
+
+/*=== skills section ===*/
+.skills-section .portfolio-section-row {
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  border: solid 1px #eeeeee;
+  margin-top: -160px;
+  position: relative;
+  z-index: 100;
+  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+
+
+  min-height: 300px;
+}
+
+
+/*=== testimonial slides ===*/
+.slick-slide {
+  padding: 30px;
+}
+.slick-slide > div {
+  padding-left: 30px;
+  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+}
 
 /*=== media queries ===*/
 @media (max-width: 768px) {
