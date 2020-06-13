@@ -21,9 +21,11 @@
       hero.css({"background-position": `center ${newHeroPos}px`});
 
       if(scrollPos > 1){
-        nav.css({"background-color": "#557a95", "color": "#ffffff"});
+        nav.css({"background-color": "#ffffff", "color": "#000000"});
+        nav.addClass("section-shadow");
       } else {
         nav.css({"background-color": "transparent", "color": "#ffffff"});
+        nav.removeClass("section-shadow");
       }
     });
   };

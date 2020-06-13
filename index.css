@@ -10,12 +10,13 @@
 section {
   padding: 0px 40px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 section .portfolio-section-row {
   width: 100%;
-  max-width: 768px;
+  max-width: 944px;
   margin: 50px auto;
 }
 section p {
@@ -49,7 +50,9 @@ nav {
 button {
   font-size: 14px;
   font-weight: 700;
+  padding: 10px 30px;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 .font-open-sans {
   font-family: 'Open Sans', sans-serif;
@@ -168,9 +171,7 @@ button {
 .hero-section .heading-container button {
   color: #ffffff;
   background-color: transparent;
-  border-radius: 3px;
   border: solid #ffffff 2px;
-  padding: 10px 30px;
   transition: .4s;
 }
 .hero-section .heading-container button:hover {
@@ -231,11 +232,11 @@ button {
   position: relative;
 }
 .about-sub-section .portfolio-section-row {
+  max-width: 768px;
   width: 100%;
+  margin: -100px auto 50px auto;
   padding: 60px 30px;
   border-radius: 5px;
-  border: solid 1px #ddd;
-  margin-top: -100px;
   position: relative;
   z-index: 100;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
@@ -300,14 +301,13 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .projects-sub-section .portfolio-section-row ul li {
-  min-height: 200px;
-  width: 30%;
+  min-height: 250px;
+  width: 250px;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
-  border: solid 1px #ddd;
-  margin: 10px auto;
+  margin: 10px;
   border-radius: 5px;
 }
 
@@ -315,10 +315,10 @@ button {
 .testimonials-section {
   padding-bottom: 80px;
 }
-
 .testimonials-sub-section {
   padding-left: 0px;
   padding-right: 0px;
+  position: relative;
 }
 .testimonials-sub-section .portfolio-section-row {
   margin-top: -100px;
@@ -331,7 +331,7 @@ button {
   padding: 30px 50px;
   max-width: 500px;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
-  border: solid 1px #ddd;
+
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
@@ -357,6 +357,38 @@ button {
 
 
 
+
+/*=== testimonial section ===*/
+.contact-section {
+
+}
+
+.contact-section .contact-section-form {
+  margin: 30px auto 0 auto;
+  max-width: 768px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .contact-section-form input,
+.contact-section .contact-section-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+.contact-section .contact-section-form textarea {
+  min-height: 96px;
+}
+.contact-section .contact-section-form button {
+  min-height: 32px;
+  border: none;
+  max-width: 200px;
+  min-width: 150px;
+  margin: 0 auto;
+}
 
 
 
