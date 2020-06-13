@@ -60,12 +60,16 @@
 
   const startSlider = () => {
     // slick.js requires a jquery object
-    const sliderContainer = $(".testimonial-slider");
-
+    const sliderContainer = $(".testimonials-slider");
+    console.log(sliderContainer);
     sliderContainer.slick({
       infinite: true,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      arrows: false
     });
   };
 

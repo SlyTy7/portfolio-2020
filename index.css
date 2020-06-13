@@ -227,8 +227,6 @@ button {
   padding-bottom: 80px;
 }
 
-
-/*=== skills section ===*/
 .about-sub-section {
   position: relative;
 }
@@ -308,22 +306,53 @@ button {
   min-height: 200px;
   width: 30%;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  border: solid 1px #ddd;
   margin: 10px auto;
   border-radius: 5px;
 }
 
 /*=== testimonial section ===*/
-.slick-slide {
+.testimonials-section {
+  padding-bottom: 80px;
+}
+
+.testimonials-sub-section {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.testimonials-sub-section .portfolio-section-row {
+  margin-top: -100px;
+  max-width: unset;
+}
+.testimonials-slide {
   padding: 30px;
 }
-.slick-slide > div {
-  padding-left: 30px;
+.testimonials-slide .quote-container {
+  padding: 30px 50px;
+  max-width: 500px;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
 }
 
+.testimonials-slide .quote-container img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 75px;
+  border-radius: 50%;
+}
+.testimonials-slide .quote-container .author {
+  font-style: italic;
+  color: #557a95;
+  text-align: right;
+}
 
-
-
+/*increase dot size*/
+.testimonials-slider .slick-dots li button:before {
+  font-size: 10px;
+}
 
 
 
