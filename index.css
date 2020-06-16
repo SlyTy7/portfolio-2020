@@ -138,8 +138,6 @@ button {
 }
 
 
-
-
 /*=== hero section ===*/
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/kimson-doan-background-scaled.jpg");
@@ -227,7 +225,6 @@ button {
   flex-direction: column;
   padding-bottom: 80px;
 }
-
 .about-sub-section {
   position: relative;
 }
@@ -288,8 +285,6 @@ button {
 .projects-section {
   padding-bottom: 80px;
 }
-
-
 .projects-sub-section {
   position: relative;
 }
@@ -309,7 +304,40 @@ button {
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
   margin: 10px;
   border-radius: 5px;
+  transition: .2s;
 }
+.projects-sub-section .portfolio-section-row ul li:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 14px 3px rgba(50,50,93,.25);
+  transform: scale(1.02);
+}
+
+.project-modal-container {
+  display: none;
+  position: fixed;
+  z-index: 9990;
+  /* MAGIC HAPPENS HERE */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.project-modal-container .project-modal {
+  background: white;
+  height: 300px;
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+}
+
+
+
 
 /*=== testimonial section ===*/
 .testimonials-section {
@@ -331,12 +359,10 @@ button {
   padding: 30px 50px;
   max-width: 500px;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
-
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
 }
-
 .testimonials-slide .quote-container img {
   margin: 0 auto;
   margin-bottom: 15px;
@@ -348,8 +374,6 @@ button {
   color: #557a95;
   text-align: right;
 }
-
-/*increase dot size*/
 .testimonials-slider .slick-dots li button:before {
   font-size: 10px;
 }
@@ -358,11 +382,8 @@ button {
 
 
 
-/*=== testimonial section ===*/
-.contact-section {
-
-}
-
+/*=== contact section ===*/
+.contact-section {}
 .contact-section .contact-section-form {
   margin: 30px auto 0 auto;
   max-width: 768px;
@@ -389,7 +410,10 @@ button {
   min-width: 150px;
   margin: 0 auto;
 }
-
+.contact-section .contact-section-form button:hover {
+  cursor: pointer;
+  opacity: .7;
+}
 
 
 /*=== media queries ===*/

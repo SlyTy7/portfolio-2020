@@ -8,6 +8,7 @@
     addWindowScrollListener();
     addNavButtonListener();
     addHeroButtonListener();
+    addProjectsListener();
   };
 
   const addWindowScrollListener = () => {
@@ -60,10 +61,54 @@
     });
   };
 
+  const addProjectsListener = () => {
+    const cells = $(".projects-section-cell");
+    const container = $(".project-modal-container");
+
+
+    cells.click(e => {
+      // const index = $(e.target).data("index");
+      showModal();
+    });
+
+    container.click(e => {
+      const target = $(e.target)
+      // const index = target.data("index");
+
+      if(target.hasClass("project-modal-container")){
+        closeModal();
+      };
+
+    });
+
+  };
+
+  const showModal = () => {
+    const container = $(".project-modal-container")[0];
+
+    $(container).show();
+  };
+
+  const closeModal = () => {
+    const container = $(".project-modal-container")[0];
+
+    $(container).hide();
+  };
+
+
+
+
+
+
+
+
+
+
+
   const startSlider = () => {
     // slick.js requires a jquery object
     const sliderContainer = $(".testimonials-slider");
-    console.log(sliderContainer);
+
     sliderContainer.slick({
       infinite: true,
       slidesToShow: 1,
