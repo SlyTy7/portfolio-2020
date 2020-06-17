@@ -39,9 +39,7 @@
       const selector = buttonClicked.data().target;
       const section = document.querySelector(`.${selector}`);
 
-      section.scrollIntoView({
-        behavior: 'smooth'
-      });
+      section.scrollIntoView({ behavior: "smooth" });
 
       e.preventDefault();
     });
@@ -94,16 +92,6 @@
 
     $(container).hide();
   };
-
-
-
-
-
-
-
-
-
-
 
   const startSlider = () => {
     // slick.js requires a jquery object
