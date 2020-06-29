@@ -275,7 +275,7 @@ button {
   animation-delay: 1.95s;
   animation-fill-mode: forwards;
   transform: translate(0, calc(-100% - 30px));
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 

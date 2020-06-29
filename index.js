@@ -1,5 +1,6 @@
 (() => {
   const init = () => {
+    if(!window.portfolio) window.portfolio = {};
     addListeners();
     startSlider();
   };
@@ -12,24 +13,53 @@
   };
 
   const addWindowScrollListener = () => {
-    const hero = $(".hero-section");
-    const nav = $(".portfolio-navigation");
+    startLimiter();
 
     $(window).scroll(e => {
-      const scrollPos = e.currentTarget.scrollY;
-      const newHeroPos = scrollPos / 3;
-
-      hero.css({"background-position": `center ${newHeroPos}px`});
-
-      if(scrollPos > 1){
-        nav.css({"background-color": "rgba(0, 0, 0, 0.8)", "color": "#ffffff"});
-        nav.addClass("section-shadow");
-      } else {
-        nav.css({"background-color": "transparent", "color": "#ffffff"});
-        nav.removeClass("section-shadow");
-      }
+      window.portfolio.scrolling = true;
+      window.portfolio.scrollEvent = e;
     });
   };
+
+  const startLimiter = e => {
+    setInterval(() => {
+      if(window.portfolio.scrolling){
+        const scrollPos = window.portfolio.scrollEvent.currentTarget.scrollY;
+        parallaxHero(scrollPos);
+
+        if(scrollPos > 1){
+          navFadeIn();
+        } else {
+          navFadeOut();
+        }
+      }
+
+      window.portfolio.scrolling = false;
+    }, 50);
+  };
+
+  const parallaxHero = scrollPos => {
+    const hero = $(".hero-section");
+    const parallaxPos = Math.round(scrollPos / 3);
+
+    hero.css({"background-position": `center ${parallaxPos}px`});
+  }
+
+  const navFadeIn = () => {
+    const nav = $(".portfolio-navigation");
+
+    nav.css({"background-color": "rgba(0, 0, 0, 0.8)", "color": "#ffffff"});
+    nav.addClass("section-shadow");
+  };
+
+  const navFadeOut = () => {
+    const nav = $(".portfolio-navigation");
+
+    nav.css({"background-color": "transparent", "color": "#ffffff"});
+    nav.removeClass("section-shadow");
+  };
+
+
 
   const addNavButtonListener = () => {
     const buttons = $("nav a");
