@@ -341,14 +341,35 @@ button {
 .projects-sub-section .portfolio-section-row ul li .project-container {
   display: none;
   height: 100%;
+  color: white;
+  text-align: center;
+}
+.projects-sub-section .portfolio-section-row ul li .project-container p {
+  margin: 0;
+}
+.projects-sub-section .portfolio-section-row ul li:hover .project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.projects-sub-section .portfolio-section-row ul li .project-container .project-title {
+  font-size: 30px;
+}
+.projects-sub-section .portfolio-section-row ul li .project-container hr {
+  max-width: 75px;
+  width: 100%;
+  margin: 0px auto 5px auto;
+}
+.projects-sub-section .portfolio-section-row ul li .project-container .project-tooltip {
+  text-decoration: underline;
+  font-size: 10px;
+  margi-top: 100px;
 }
 
-/*
-.projects-sub-section .portfolio-section-row ul li:hover .project-container {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-*/
+
 
 
 .project-modal-container {
@@ -357,7 +378,8 @@ button {
   z-index: 9990;
   /* MAGIC HAPPENS HERE */
   transform: translateZ(0);
-  -webkit-transform: translateZ(0);  top: 0;
+  -webkit-transform: translateZ(0);
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
