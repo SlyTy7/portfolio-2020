@@ -24,14 +24,19 @@
   const startLimiter = e => {
     setInterval(() => {
       if(window.portfolio.scrolling){
+        const navigation = $("nav");
         const scrollPos = window.portfolio.scrollEvent.currentTarget.scrollY;
-        parallaxHero(scrollPos);
 
         if(scrollPos > 1){
           navFadeIn();
+          navigation.addClass("scrolled");
         } else {
           navFadeOut();
+          navigation.removeClass("scrolled");
         }
+
+        parallaxHero(scrollPos);
+
       }
 
       window.portfolio.scrolling = false;
@@ -59,9 +64,8 @@
     nav.removeClass("section-shadow");
   };
 
-
-
   const addNavButtonListener = () => {
+    const navigation = $("nav");
     const buttons = $("nav a");
     const mobileMenu = $(".mobile-nav-menu-open");
 
@@ -71,7 +75,15 @@
       const section = document.querySelector(`.${selector}`);
 
       if(section) section.scrollIntoView({ behavior: "smooth" });
-      if(selector === "mobile-menu-toggle") mobileMenu.toggle();
+      if(selector === "mobile-menu-toggle") {
+        if(!navigation.hasClass("scrolled") && !mobileMenu.hasClass("menu-open")) navFadeIn();
+        if(!navigation.hasClass("scrolled") && mobileMenu.hasClass("menu-open")) navFadeOut();
+
+        if(mobileMenu.hasClass("menu-open")) mobileMenu.slideUp(400);
+        if(!mobileMenu.hasClass("menu-open")) mobileMenu.slideDown(400);
+
+        mobileMenu.toggleClass("menu-open");
+      };
 
       e.preventDefault();
     });
