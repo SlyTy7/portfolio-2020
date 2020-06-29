@@ -21,30 +21,30 @@
     <nav class="portfolio-navigation">
       <ul class="desktop-nav-menu">
         <li>
-          <a data-target="about-section" class="nav-link" href="#">About</a>
+          <a data-target="about-nav-anchor" class="nav-link" href="#">About</a>
         </li>
         <li>
-          <a data-target="projects-section" class="nav-link" href="#">Projects</a>
+          <a data-target="projects-nav-anchor" class="nav-link" href="#">Projects</a>
         </li>
         <li>
-          <a data-target="testimonials-section" class="nav-link" href="#">Testimonials</a>
+          <a data-target="testimonials-nav-anchor" class="nav-link" href="#">Testimonials</a>
         </li>
         <li>
-          <a data-target="contact-section" class="nav-link" href="#">Contact</a>
+          <a data-target="contact-nav-anchor" class="nav-link" href="#">Contact</a>
         </li>
       </ul>
       <ul class="mobile-nav-menu">
         <li>
-          <a data-target="about-section" class="nav-link" href="#">About</a>
+          <a data-target="about-nav-anchor" class="nav-link" href="#">About</a>
         </li>
         <li>
-          <a data-target="projects-section" class="nav-link" href="#">Projects</a>
+          <a data-target="projects-nav-anchor" class="nav-link" href="#">Projects</a>
         </li>
         <li>
-          <a data-target="testimonials-section" class="nav-link" href="#">Testimonials</a>
+          <a data-target="testimonials-nav-anchor" class="nav-link" href="#">Testimonials</a>
         </li>
         <li>
-          <a data-target="contact-section" class="nav-link" href="#">Contact</a>
+          <a data-target="contact-nav-anchor" class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </nav>
@@ -69,6 +69,7 @@
 
     <!-- ABOUT -->
     <section class="portfolio-section about-section dark-blue-bg white-font">
+      <div class="about-nav-anchor nav-anchor"></div>
       <div class="portfolio-section-row">
         <h2>About Me</h2>
         <p>I'm a front-end web developer who lives and works in San Francisco and specializes in creating fully responsive websites and applications. With a background in marketing and web development, I strive to build innovative solutions with technology.</p>
@@ -113,6 +114,7 @@
     <!-- TODO: make thumbmnail enlarge on hover-->
     <!-- TODO: add thumbnails of actually projects -->
     <section class="portfolio-section projects-section sand-bg white-font">
+      <div class="projects-nav-anchor nav-anchor"></div>
       <div class="portfolio-section-row">
         <h2>My Recent Work</h2>
         <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser. Take a look at some of my latest work.</p>
@@ -130,14 +132,15 @@
         </ul>
       </div>
     </section>
-    <!-- END PROJECTS -->
     <section class="portfolio-section project-modal-container">
       <div class="project-modal"></div>
     </section>
+    <!-- END PROJECTS -->
 
     <!-- TESTIMONIALS -->
     <!-- TODO: save images locally and host. If link breaks, will lose images -->
     <section class="portfolio-section testimonials-section dark-blue-bg white-font">
+      <div class="testimonials-nav-anchor nav-anchor"></div>
       <div class="portfolio-section-row">
         <h2>Testimonials</h2>
         <p>Here's what some people had to say about working with me.</p>
@@ -174,6 +177,7 @@
 
     <!-- CONTACT -->
     <section class="portfolio-section contact-section sand-bg white-font">
+      <div class="contact-nav-anchor nav-anchor"></div>
       <div class="portfolio-section-row">
         <h2>Contact Me</h2>
         <p>Shoot me a message! Or feel free to check out my links below.</p>
