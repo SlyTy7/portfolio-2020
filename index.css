@@ -117,6 +117,7 @@ button {
   background-color: transparent;
   color: #ffffff;
   transition: .4s;
+  min-height: 60px;
 }
 /* desktop menu */
 .portfolio-navigation ul.desktop-nav-menu {
@@ -137,9 +138,63 @@ button {
   text-decoration: none;
   color: inherit;
 }
+
 /* mobile menu */
 .portfolio-navigation ul.mobile-nav-menu {
   display: none;
+  flex-direction: row;
+  padding: 10px 20px;
+  min-height: 60px;
+  max-width: 768px;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio-navigation ul.mobile-nav-menu .home-link {
+  max-height: 30px;
+}
+.portfolio-navigation ul.mobile-nav-menu .nav-icon {
+  max-width: 30px;
+}
+.portfolio-navigation ul.mobile-nav-menu li {
+  display: inline-flex;
+}
+.portfolio-navigation ul.mobile-nav-menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+.portfolio-navigation ul.mobile-nav-menu li a.mobile-menu-toggle {
+  font-size: 26px;
+}
+.portfolio-navigation ul.mobile-nav-menu-open {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  padding: 0px 20px 10px 20px;
+  min-height: 60px;
+  max-width: 768px;
+  margin: 0 auto;
+  height: 100%;
+}
+.portfolio-navigation ul.mobile-nav-menu-open {}
+.portfolio-navigation ul.mobile-nav-menu-open li {}
+.portfolio-navigation ul.mobile-nav-menu-open li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-navigation ul.desktop-nav-menu {
+    display: none;
+  }
+  .portfolio-navigation ul.mobile-nav-menu {
+    display: flex;
+  }
 }
 
 

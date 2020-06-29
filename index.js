@@ -22,7 +22,7 @@
       hero.css({"background-position": `center ${newHeroPos}px`});
 
       if(scrollPos > 1){
-        nav.css({"background-color": "#ffffff", "color": "#000000"});
+        nav.css({"background-color": "rgba(0, 0, 0, 0.8)", "color": "#ffffff"});
         nav.addClass("section-shadow");
       } else {
         nav.css({"background-color": "transparent", "color": "#ffffff"});
@@ -33,13 +33,15 @@
 
   const addNavButtonListener = () => {
     const buttons = $("nav a");
+    const mobileMenu = $(".mobile-nav-menu-open");
 
     buttons.on("click", e => {
       const buttonClicked = $(e.currentTarget);
       const selector = buttonClicked.data().target;
       const section = document.querySelector(`.${selector}`);
 
-      section.scrollIntoView({ behavior: "smooth" });
+      if(section) section.scrollIntoView({ behavior: "smooth" });
+      if(selector === "mobile-menu-toggle") mobileMenu.toggle();
 
       e.preventDefault();
     });
