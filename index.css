@@ -387,6 +387,7 @@ button {
   box-shadow: 3px 3px 14px 3px rgba(50,50,93,.25);
   transform: scale(1.02);
 }
+/*
 .projects-sub-section .portfolio-section-row ul li:nth-child(1) {
   background-image: url("./assets/projects/clock-screenshot-scaled.png");
 }
@@ -405,6 +406,7 @@ button {
 .projects-sub-section .portfolio-section-row ul li:nth-child(6) {
   background-image: url("./assets/projects/gldshop-screenshot-scaled.png");
 }
+*/
 .projects-sub-section .portfolio-section-row ul li .project-container {
   display: none;
   height: 100%;

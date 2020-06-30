@@ -1,9 +1,78 @@
 (() => {
   const init = () => {
     if(!window.portfolio) window.portfolio = {};
+
+    addProjects();
+    displayProjects();
+
     addListeners();
     startSlider();
   };
+
+  const addProjects = () => {
+    if(!window.portfolio.projects) window.portfolio.projects = [];
+
+    window.portfolio.projects = [
+      {
+        "title": "Clock.js",
+        "description": "A simple digital clock made with vanilla javascript.",
+        "thumb_url": "./assets/projects/clock-screenshot-scaled.png",
+        "links": {
+          "live_url": "https://slyty7.github.io/clock/",
+          "code_url": "https://github.com/SlyTy7/clock",
+        },
+        "image_urls": [
+          "./assets/projects/clock-screenshot-scaled.png",
+          "./assets/projects/clock-screenshot-scaled.png",
+          "./assets/projects/clock-screenshot-scaled.png",
+        ]
+      },
+      {
+        "title": "MovieFind",
+        "description": "A web application that enables you to search for movies and get information about the movie.",
+        "thumb_url": "./assets/projects/moviefind-screenshot-scaled.png",
+        "links": {
+          "live_url": "https://slyty7.github.io/MovieFind/",
+          "code_url": "https://github.com/SlyTy7/MovieFind",
+        },
+        "image_urls": [
+          "./assets/projects/moviefind-screenshot-scaled.png",
+          "./assets/projects/moviefind-screenshot-scaled.png",
+          "./assets/projects/moviefind-screenshot-scaled.png",
+        ]
+      },
+      {
+        "title": "DrumKit.js",
+        "description": "A small drum kit made with JavaScript.",
+        "thumb_url": "./assets/projects/drums-screenshot-scaled.png",
+        "links": {
+          "live_url": "https://slyty7.github.io/drums/",
+          "code_url": "https://github.com/SlyTy7/drums",
+        },
+        "image_urls": [
+          "./assets/projects/drums-screenshot-scaled.png",
+          "./assets/projects/drums-screenshot-scaled.png",
+          "./assets/projects/drums-screenshot-scaled.png",
+        ]
+      }
+    ];
+  };
+
+  const displayProjects = () => {
+    const projects = window.portfolio.projects;
+    const projectsGrid = $(".projects-section-grid");
+
+    projects.forEach( (project, index) => {
+      const background = `background-image: url(${project.thumb_url})`;
+      const title = `<h3 class="project-title">${project.title}</h3>`;
+      const cta = `<hr><p class="project-tooltip">click for more info</p>`;
+      const container = `<div class="project-container">${title}${cta}</div>`;
+      const cell = `<li style="${background}" class="projects-section-cell" data-index="${index}">${container}</li>`;
+
+      projectsGrid.append(cell);
+    });
+  };
+
 
   const addListeners = () => {
     addWindowScrollListener();
@@ -36,7 +105,6 @@
         }
 
         parallaxHero(scrollPos);
-
       }
 
       window.portfolio.scrolling = false;
