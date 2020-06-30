@@ -251,7 +251,7 @@ button {
 }
 @keyframes expand {
   0% { max-width: 0px; }
-  100% { max-width: 400px; }
+  100% { max-width: 200px; }
 }
 .hero-section .heading-container .top-heading,
 .hero-section .heading-container .bottom-heading,
