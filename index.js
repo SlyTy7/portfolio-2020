@@ -78,7 +78,7 @@
     addWindowScrollListener();
     addNavButtonListener();
     addHeroButtonListener();
-    addProjectsListener();
+    // addProjectsListener();
   };
 
   const addWindowScrollListener = () => {
@@ -171,13 +171,15 @@
     });
   };
 
+  /*
   const addProjectsListener = () => {
     const cells = $(".projects-section-cell");
     const container = $(".project-modal-container");
 
-
     cells.click(e => {
-      // const index = $(e.target).data("index");
+      const index = $(e.currentTarget).data("index");
+
+      buildModal(index);
       showModal();
     });
 
@@ -192,18 +194,34 @@
     });
 
   };
+  */
+  /*
+  const buildModal = index => {
+    const modal = $(".project-modal")[0];
+    const projects = window.portfolio.projects;
+    const project = projects[index];
+    // const image = `<img src="${project.image_urls[0]}" alt="${project.title}">`;
 
+
+
+    console.log(project);
+  };
+  */
+  /*
   const showModal = () => {
-    const container = $(".project-modal-container")[0];
+    const modalContainer = $(".project-modal-container");
 
-    $(container).show();
+    modalContainer.show();
   };
 
   const closeModal = () => {
-    const container = $(".project-modal-container")[0];
+    const modalContainer = $(".project-modal-container");
+    const modal = $(".project-modal");
 
-    $(container).hide();
+    modalContainer.hide();
+    modal.empty();
   };
+  */
 
   const startSlider = () => {
     // slick.js requires a jquery object
