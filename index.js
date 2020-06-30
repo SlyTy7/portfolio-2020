@@ -63,11 +63,18 @@
     const projectsGrid = $(".projects-section-grid");
 
     projects.forEach( (project, index) => {
+      // image
       const background = `background-image: url(${project.thumb_url})`;
+      const image = `<div class="project-image" style="${background}"></div>`;
+
+      // content
       const title = `<h3 class="project-title">${project.title}</h3>`;
-      const cta = `<hr><p class="project-tooltip">click for more info</p>`;
-      const container = `<div class="project-container">${title}${cta}</div>`;
-      const cell = `<li style="${background}" class="projects-section-cell" data-index="${index}">${container}</li>`;
+      const description = `<p class="project-description">${project.description}</p>`;
+      const content = `<div class="project-content">${title}${description}</div>`
+
+      // project card
+      const container = `<div class="project-container">${image}${content}</div>`;
+      const cell = `<li class="projects-section-cell" data-index="${index}">${container}</li>`;
 
       projectsGrid.append(cell);
     });

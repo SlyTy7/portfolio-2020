@@ -369,6 +369,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
 }
 .projects-sub-section .portfolio-section-row ul li {
   min-height: 250px;
@@ -376,100 +377,30 @@ button {
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
   margin: 10px;
   border-radius: 5px;
-  transition: .2s;
+}
+.project-container {
+  height: 100%;
+  text-align: center;
+}
+
+.project-container .project-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  min-height: 200px;
 }
-/*
-.projects-sub-section .portfolio-section-row ul li:hover {
-  cursor: pointer;
-  box-shadow: 3px 3px 14px 3px rgba(50,50,93,.25);
-  transform: scale(1.02);
+
+.project-container .project-content {
+  padding: 15px 10px;
 }
-*/
-/*
-.projects-sub-section .portfolio-section-row ul li:nth-child(1) {
-  background-image: url("./assets/projects/clock-screenshot-scaled.png");
+.project-container .project-content .project-title {
+  font-size: 20px;
 }
-.projects-sub-section .portfolio-section-row ul li:nth-child(2) {
-  background-image: url("./assets/projects/moviefind-screenshot-scaled.png");
-}
-.projects-sub-section .portfolio-section-row ul li:nth-child(3) {
-  background-image: url("./assets/projects/drums-screenshot-scaled.png");
-}
-.projects-sub-section .portfolio-section-row ul li:nth-child(4) {
-  background-image: url("./assets/projects/taxshrink-screenshot-scaled.png");
-}
-.projects-sub-section .portfolio-section-row ul li:nth-child(5) {
-  background-image: url("./assets/projects/todo-screenshot-scaled.png");
-}
-.projects-sub-section .portfolio-section-row ul li:nth-child(6) {
-  background-image: url("./assets/projects/gldshop-screenshot-scaled.png");
-}
-*/
-.projects-sub-section .portfolio-section-row ul li .project-container {
-  display: none;
-  height: 100%;
-  color: white;
-  text-align: center;
-}
-.projects-sub-section .portfolio-section-row ul li .project-container p {
+.project-container .project-content .project-description {
   margin: 0;
+  font-size: 12px;
 }
-/*
-.projects-sub-section .portfolio-section-row ul li:hover .project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
-}
-*/
-.projects-sub-section .portfolio-section-row ul li .project-container .project-title {
-  font-size: 30px;
-}
-.projects-sub-section .portfolio-section-row ul li .project-container hr {
-  max-width: 75px;
-  width: 100%;
-  margin: 0px auto 5px auto;
-}
-.projects-sub-section .portfolio-section-row ul li .project-container .project-tooltip {
-  text-decoration: underline;
-  font-size: 10px;
-  margi-top: 100px;
-}
-
-
-
-/*
-.project-modal-container {
-  display: none;
-  position: fixed;
-  z-index: 9990;
-
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-}
-.project-modal-container .project-modal {
-  background: white;
-  height: 300px;
-  width: 100%;
-  max-width: 944px;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
-}
-*/
-
 
 
 /*=== testimonial section ===*/
