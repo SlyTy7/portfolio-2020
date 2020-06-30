@@ -221,7 +221,7 @@ button {
   color: white;
 }
 .hero-section .heading-container hr {
-  max-width: 0px;
+  max-width: 400px;
   width: 100%;
   border: solid #ffffff 2px;
   margin : 10px auto;
@@ -250,8 +250,8 @@ button {
   100% { transform: translate3d(0, 0, 0); }
 }
 @keyframes expand {
-  0% { max-width: 0px; }
-  100% { max-width: 200px; }
+  0% { width: 0px; }
+  100% { width: 100%; }
 }
 .hero-section .heading-container .top-heading,
 .hero-section .heading-container .bottom-heading,
@@ -489,6 +489,9 @@ button {
   h2 {
     font-size: 34px;
     font-weight: 700;
+  }
+  .hero-section .heading-container hr {
+    max-width: 300px;
   }
 }
 @media (max-width: 425px) {
