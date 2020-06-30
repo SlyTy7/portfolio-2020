@@ -221,7 +221,7 @@ button {
   color: white;
 }
 .hero-section .heading-container hr {
-  max-width: 400px;
+  max-width: 0px;
   width: 100%;
   border: solid #ffffff 2px;
   margin : 10px auto;
@@ -249,6 +249,10 @@ button {
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
+@keyframes expand {
+  0% { max-width: 0px; }
+  100% { max-width: 400px; }
+}
 .hero-section .heading-container .top-heading,
 .hero-section .heading-container .bottom-heading,
 .hero-section .heading-container .bottom-button {
@@ -271,6 +275,13 @@ button {
   animation-fill-mode: forwards;
   transform: translate(0, -100%);
 }
+
+
+.hero-section .heading-container hr {
+  animation: expand 2s;
+  animation-fill-mode: forwards;
+}
+
 .hero-section .heading-container .bottom-button button {
   animation: slideDown .6s;
   animation-delay: 1.95s;
