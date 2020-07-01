@@ -315,7 +315,7 @@ button {
   position: relative;
 }
 .about-sub-section .portfolio-section-row {
-  max-width: 768px;
+  max-width: 600px;
   width: 100%;
   margin: -100px auto 50px auto;
   padding: 60px 30px;
@@ -336,9 +336,6 @@ button {
 }
 .about-sub-section .portfolio-section-row .skills-column  h3 {
   margin: 20px auto;
-  /*
-  font-size: 20px;
-  */
 }
 .about-sub-section .portfolio-section-row .skills-column ul {
   list-style: none;
