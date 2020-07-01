@@ -3,7 +3,11 @@
     if(!window.portfolio) window.portfolio = {};
 
     addProjects();
+    addPortfolioSocial();
+
     displayProjects();
+    displaySocialButtons();
+
     addEventListeners();
     startSlider();
   };
@@ -94,6 +98,39 @@
 
       projectsGrid.append(cell);
     });
+  };
+
+  const addPortfolioSocial = () => {
+    if(!window.portfolio.contact) window.portfolio.contact = [
+      {"github" : "https://github.com/SlyTy7"},
+      {"email" : "mailto:tylerwest.dev@gmail"},
+      {"phone" : "tel:5107363210"},
+      {"codepen" : "https://codepen.io/SlyTy7"}
+    ];
+  };
+
+  const displaySocialButtons = () => {
+    const container = $(".social-buttons-container");
+    const links = window.portfolio.contact;
+
+    links.forEach(link => {
+      let buttonLink = "";
+      if(link.github) buttonLink = link.github;
+      if(link.email) buttonLink = link.email;
+      if(link.phone) buttonLink = link.phone;
+      if(link.codepen) buttonLink = link.codepen;
+
+      let buttonIcon = "";
+      if(link.github) buttonIcon = `<i class="fab fa-github dark-gray-font"></i>`;
+      if(link.email) buttonIcon = `<i class="fas fa-envelope-open dark-gray-font"></i>`;
+      if(link.phone) buttonIcon = `<i class="fas fa-mobile-alt dark-gray-font"></i>`;
+      if(link.codepen) buttonIcon = `<i class="fab fa-codepen dark-gray-font"></i>`;
+
+      const button = `<a href="${buttonLink}" target="_blank" rel="noopener" class="white-bg">${buttonIcon}</a>`;
+
+      container.append(button);
+    })
+
   };
 
   const addEventListeners = () => {

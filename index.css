@@ -515,6 +515,30 @@ button {
 
 /*=== contact section ===*/
 .contact-section {}
+
+
+.contact-section .social-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 768px;
+  margin: 20px auto;
+}
+.contact-section .social-buttons-container a {
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25)
+}
+.contact-section .social-buttons-container a  i {
+  font-color: transparent;
+}
 .contact-section .contact-section-form {
   margin: 30px auto 0 auto;
   max-width: 768px;
