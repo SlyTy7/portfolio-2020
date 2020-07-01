@@ -80,12 +80,10 @@
     });
   };
 
-
   const addListeners = () => {
     addWindowScrollListener();
     addNavButtonListener();
     addHeroButtonListener();
-    // addProjectsListener();
   };
 
   const addWindowScrollListener = () => {
@@ -177,58 +175,6 @@
       e.preventDefault();
     });
   };
-
-  /*
-  const addProjectsListener = () => {
-    const cells = $(".projects-section-cell");
-    const container = $(".project-modal-container");
-
-    cells.click(e => {
-      const index = $(e.currentTarget).data("index");
-
-      buildModal(index);
-      showModal();
-    });
-
-    container.click(e => {
-      const target = $(e.target)
-      // const index = target.data("index");
-
-      if(target.hasClass("project-modal-container")){
-        closeModal();
-      };
-
-    });
-
-  };
-  */
-  /*
-  const buildModal = index => {
-    const modal = $(".project-modal")[0];
-    const projects = window.portfolio.projects;
-    const project = projects[index];
-    // const image = `<img src="${project.image_urls[0]}" alt="${project.title}">`;
-
-
-
-    console.log(project);
-  };
-  */
-  /*
-  const showModal = () => {
-    const modalContainer = $(".project-modal-container");
-
-    modalContainer.show();
-  };
-
-  const closeModal = () => {
-    const modalContainer = $(".project-modal-container");
-    const modal = $(".project-modal");
-
-    modalContainer.hide();
-    modal.empty();
-  };
-  */
 
   const startSlider = () => {
     // slick.js requires a jquery object
