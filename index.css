@@ -404,7 +404,7 @@ button {
 }
 
 .project-container .project-image {
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;

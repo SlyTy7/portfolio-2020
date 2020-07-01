@@ -22,6 +22,14 @@
         }
       },
       {
+        "title": "SpotOn",
+        "description": "",
+        "thumb_url": "./assets/projects/spoton-screenshot-scaled.png",
+        "links": {
+          "live_url": "https://www.spoton.com/"
+        }
+      },
+      {
         "title": "MovieFind",
         "description": "A web application that enables you to search for movies and get information about the movie.",
         "thumb_url": "./assets/projects/moviefind-screenshot-scaled.png",
@@ -37,6 +45,15 @@
         "links": {
           "live_url": "https://slyty7.github.io/drums/",
           "code_url": "https://github.com/SlyTy7/drums",
+        }
+      },
+      {
+        "title": "React To-Do",
+        "description": "A basic to-do list built with React and CRUD functionality.",
+        "thumb_url": "./assets/projects/todo-screenshot-scaled.png",
+        "links": {
+          "live_url": "https://slyty7.github.io/react-todo/",
+          "code_url": "https://github.com/SlyTy7/react-todo",
         }
       },
       {
