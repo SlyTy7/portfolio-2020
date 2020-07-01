@@ -116,27 +116,6 @@
     });
   };
 
-  const parallaxHero = scrollPos => {
-    const hero = $(".hero-section");
-    const parallaxPos = scrollPos / 4;
-
-    hero.css({"background-position": `center ${parallaxPos}px`});
-  }
-
-  const navFadeIn = () => {
-    const nav = $(".portfolio-navigation");
-
-    nav.css({"background-color": "rgba(0, 0, 0, 0.8)", "color": "#ffffff"});
-    nav.addClass("section-shadow");
-  };
-
-  const navFadeOut = () => {
-    const nav = $(".portfolio-navigation");
-
-    nav.css({"background-color": "transparent", "color": "#ffffff"});
-    nav.removeClass("section-shadow");
-  };
-
   const addNavButtonListener = () => {
     const navigation = $("nav");
     const buttons = $("nav a");
@@ -176,6 +155,27 @@
     });
   };
 
+  const parallaxHero = scrollPos => {
+    const hero = $(".hero-section");
+    const parallaxPos = scrollPos / 4;
+
+    hero.css({"background-position": `center ${parallaxPos}px`});
+  }
+
+  const navFadeIn = () => {
+    const nav = $(".portfolio-navigation");
+
+    nav.css({"background-color": "rgba(0, 0, 0, 0.8)", "color": "#ffffff"});
+    nav.addClass("section-shadow");
+  };
+
+  const navFadeOut = () => {
+    const nav = $(".portfolio-navigation");
+
+    nav.css({"background-color": "transparent", "color": "#ffffff"});
+    nav.removeClass("section-shadow");
+  };
+
   const startSlider = () => {
     // slick.js requires a jquery object
     const sliderContainer = $(".testimonials-slider");
@@ -190,7 +190,6 @@
       arrows: false
     });
   };
-
 
   return init();
 })()
