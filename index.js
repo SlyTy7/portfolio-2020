@@ -102,6 +102,7 @@
 
   const addPortfolioSocial = () => {
     if(!window.portfolio.contact) window.portfolio.contact = [
+      {"linkedin" : "https://www.linkedin.com/in/tylerjwest/"},
       {"github" : "https://github.com/SlyTy7"},
       {"email" : "mailto:tylerwest.dev@gmail"},
       {"phone" : "tel:5107363210"},
@@ -116,12 +117,14 @@
     links.forEach(link => {
       let buttonLink = "";
       if(link.github) buttonLink = link.github;
+      if(link.linkedin) buttonLink = link.linkedin;
       if(link.email) buttonLink = link.email;
       if(link.phone) buttonLink = link.phone;
       if(link.codepen) buttonLink = link.codepen;
 
       let buttonIcon = "";
       if(link.github) buttonIcon = `<i class="fab fa-github dark-gray-font"></i>`;
+      if(link.linkedin) buttonIcon = `<i class="fab fa-linkedin dark-gray-font"></i>`;
       if(link.email) buttonIcon = `<i class="fas fa-envelope-open dark-gray-font"></i>`;
       if(link.phone) buttonIcon = `<i class="fas fa-mobile-alt dark-gray-font"></i>`;
       if(link.codepen) buttonIcon = `<i class="fab fa-codepen dark-gray-font"></i>`;
