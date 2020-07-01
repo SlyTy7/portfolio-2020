@@ -523,7 +523,7 @@ button {
   justify-content: space-evenly;
   align-items: center;
   max-width: 768px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .contact-section .social-buttons-container a {
   font-size: 30px;
@@ -568,6 +568,17 @@ button {
 .contact-section .contact-section-form button:hover {
   cursor: pointer;
   opacity: .7;
+}
+
+
+.copyright-section {
+  padding-bottom: 30px;
+}
+.copyright-section p {
+  margin: 0;
+  font-size: 13px;
+  font-style: italic;
+  color: #b9b5bb;
 }
 
 
