@@ -20,12 +20,7 @@
         "links": {
           "live_url": "https://slyty7.github.io/clock/",
           "code_url": "https://github.com/SlyTy7/clock",
-        },
-        "image_urls": [
-          "./assets/projects/clock-screenshot-scaled.png",
-          "./assets/projects/clock-screenshot-scaled.png",
-          "./assets/projects/clock-screenshot-scaled.png",
-        ]
+        }
       },
       {
         "title": "MovieFind",
@@ -34,12 +29,7 @@
         "links": {
           "live_url": "https://slyty7.github.io/MovieFind/",
           "code_url": "https://github.com/SlyTy7/MovieFind",
-        },
-        "image_urls": [
-          "./assets/projects/moviefind-screenshot-scaled.png",
-          "./assets/projects/moviefind-screenshot-scaled.png",
-          "./assets/projects/moviefind-screenshot-scaled.png",
-        ]
+        }
       },
       {
         "title": "DrumKit.js",
@@ -48,12 +38,15 @@
         "links": {
           "live_url": "https://slyty7.github.io/drums/",
           "code_url": "https://github.com/SlyTy7/drums",
-        },
-        "image_urls": [
-          "./assets/projects/drums-screenshot-scaled.png",
-          "./assets/projects/drums-screenshot-scaled.png",
-          "./assets/projects/drums-screenshot-scaled.png",
-        ]
+        }
+      },
+      {
+        "title": "The GLD Shop",
+        "description": "",
+        "thumb_url": "./assets/projects/gldshop-screenshot-scaled.png",
+        "links": {
+          "live_url": "https://www.thegldshop.com/"
+        }
       }
     ];
   };
@@ -67,15 +60,19 @@
       const background = `background-image: url(${project.thumb_url})`;
       const image = `<div class="project-image" style="${background}"></div>`;
 
-      // content
+      // title & description
       const title = `<h3 class="project-title">${project.title}</h3>`;
       const description = `<p class="project-description">${project.description}</p>`;
-      const liveButton = `<button class="project-live-button dark-blue-bg white-font">view it live</button>`;
-      const codeButton = `<button class="project-code-button white-bg dark-blue-font">see the code</button>`;
-      const buttons = `<div class="project-buttons">${liveButton}${codeButton}</div>`;
-      const content = `<div class="project-content">${title}${description}${buttons}</div>`
 
-      // project card
+      // links
+      let liveButton = "";
+      let codeButton = "";
+      if(project.links.live_url) liveButton = `<a href="${project.links.live_url}" target="_blank" rel="noopener" class="dark-blue-bg white-font">view it live</a>`;
+      if(project.links.code_url) codeButton = `<a href="${project.links.code_url}" target="_blank" rel="noopener" class="white-bg dark-blue-font">see the code</a>`;
+      const buttons = `<div class="project-buttons">${liveButton}${codeButton}</div>`;
+
+      // card
+      const content = `<div class="project-content">${title}${description}${buttons}</div>`
       const container = `<div class="project-container">${image}${content}</div>`;
       const cell = `<li class="projects-section-cell" data-index="${index}">${container}</li>`;
 

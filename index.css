@@ -412,16 +412,26 @@ button {
 .project-container .project-content .project-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
   padding: 0 5px;
   flex: 1;
 }
-.project-container .project-content .project-buttons button {
+.project-container .project-content .project-buttons a {
   border: none;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
   max-height: 39px;
-  margin-top: auto;
+  margin: auto 0 0 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.project-container .project-content .project-buttons a:nth-child(2){
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {
@@ -435,12 +445,12 @@ button {
   .project-container .project-image {
     min-height: 300px;
   }
-  .project-container .project-content .project-buttons button {
+  .project-container .project-content .project-buttons a {
     padding: 10px;
   }
 }
 @media (max-width: 468px) {
-  .project-container .project-content .project-buttons button {
+  .project-container .project-content .project-buttons a {
     font-size: 12px;
   }
 }
