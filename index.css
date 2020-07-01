@@ -377,6 +377,7 @@ button {
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
   margin: 10px;
   border-radius: 5px;
+  overflow: hidden;
 }
 .project-container {
   height: 100%;
@@ -392,14 +393,16 @@ button {
 }
 
 .project-container .project-content {
-  padding: 15px 10px;
+  padding: 5px 15px 15px 15px;
 }
 .project-container .project-content .project-title {
   font-size: 20px;
+  font-weight: 900;
 }
 .project-container .project-content .project-description {
   margin: 0;
-  font-size: 12px;
+  margin-top: 7px;
+  font-size: 14px;
 }
 
 
