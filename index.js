@@ -87,15 +87,8 @@
   };
 
   const addWindowScrollListener = () => {
-    startLimiter();
-
-    $(window).scroll(e => {
-      window.portfolio.scrolling = true;
-      window.portfolio.scrollEvent = e;
-    });
-  };
-
-  const startLimiter = e => {
+    // scroll limiter
+    // checks if scrolling every 50 ms
     setInterval(() => {
       if(window.portfolio.scrolling){
         const navigation = $("nav");
@@ -114,6 +107,13 @@
 
       window.portfolio.scrolling = false;
     }, 50);
+
+    // sets global variable if currently scrolling
+    // does heavy work inside of limiter above
+    $(window).scroll(e => {
+      window.portfolio.scrolling = true;
+      window.portfolio.scrollEvent = e;
+    });
   };
 
   const parallaxHero = scrollPos => {
