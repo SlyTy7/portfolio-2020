@@ -493,6 +493,9 @@ button {
   .hero-section .heading-container hr {
     max-width: 300px;
   }
+  section.portfolio-section .portfolio-section-row {
+    max-width: 468px;
+  }
 }
 @media (max-width: 425px) {
   h1 {
