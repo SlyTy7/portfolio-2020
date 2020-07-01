@@ -4,8 +4,7 @@
 
     addProjects();
     displayProjects();
-
-    addListeners();
+    addEventListeners();
     startSlider();
   };
 
@@ -80,7 +79,7 @@
     });
   };
 
-  const addListeners = () => {
+  const addEventListeners = () => {
     addWindowScrollListener();
     addNavButtonListener();
     addHeroButtonListener();
