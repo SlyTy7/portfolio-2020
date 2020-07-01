@@ -76,7 +76,6 @@
       const container = `<div class="project-container">${image}${content}</div>`;
       const cell = `<li class="projects-section-cell" data-index="${index}">${container}</li>`;
 
-
       projectsGrid.append(cell);
     });
   };
