@@ -441,6 +441,10 @@ button {
   border-radius: 3px;
   text-decoration: none;
 }
+.project-container .project-content .project-buttons a:hover {
+  cursor: pointer;
+  opacity: .7;
+}
 .project-container .project-content .project-buttons a:nth-child(2){
   margin-left: auto;
 }
