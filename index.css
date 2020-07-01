@@ -395,14 +395,23 @@ button {
 .project-container .project-content {
   padding: 5px 15px 15px 15px;
 }
-.project-container .project-content .project-title {
-  font-size: 20px;
-  font-weight: 900;
-}
+.project-container .project-content .project-title {}
 .project-container .project-content .project-description {
   margin: 0;
   margin-top: 7px;
   font-size: 14px;
+}
+@media (max-width: 768px) {
+  .projects-sub-section .portfolio-section-row ul li {
+    width: 425px;
+    margin: 20px 10px;
+  }
+  .project-container .project-content {
+    padding: 15px 20px 20px 20px;
+  }
+  .project-container .project-image {
+    min-height: 300px;
+  }
 }
 
 
@@ -490,8 +499,11 @@ button {
     font-weight: 800;
   }
   h2 {
-    font-size: 34px;
+    font-size: 36px;
     font-weight: 700;
+  }
+  h3 {
+    font-size: 24px !important;
   }
   .hero-section .heading-container hr {
     max-width: 300px;
