@@ -129,14 +129,28 @@ button {
   margin: 0 auto;
   height: 100%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .portfolio-navigation ul.desktop-nav-menu li {
   display: inline-flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.portfolio-navigation ul.desktop-nav-menu li:nth-child(1){
+  flex-grow: 2;
+  justify-content: flex-start;
 }
 .portfolio-navigation ul.desktop-nav-menu li a {
   text-decoration: none;
   color: inherit;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-navigation ul.desktop-nav-menu li a .nav-icon {
+  max-width: 40px;
+  max-height: 40px;
 }
 
 /* mobile menu */
