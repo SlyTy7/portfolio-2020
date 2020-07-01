@@ -331,13 +331,13 @@ button {
   line-height: 1.5;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .about-sub-section .portfolio-section-row .skills-column:nth-child(1) {
     border-right: solid 1px #ddd;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about-sub-section .portfolio-section-row  {
     display: flex;
     flex-direction: column;
