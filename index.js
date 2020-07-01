@@ -118,7 +118,7 @@
 
   const parallaxHero = scrollPos => {
     const hero = $(".hero-section");
-    const parallaxPos = Math.round(scrollPos / 3);
+    const parallaxPos = scrollPos / 4;
 
     hero.css({"background-position": `center ${parallaxPos}px`});
   }
