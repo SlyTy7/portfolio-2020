@@ -373,7 +373,7 @@ button {
 }
 .projects-sub-section .portfolio-section-row ul li {
   min-height: 250px;
-  width: 250px;
+  width: 400px;
   box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
   margin: 10px;
   border-radius: 5px;
@@ -382,6 +382,9 @@ button {
 .project-container {
   height: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-container .project-image {
@@ -389,11 +392,14 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  min-height: 200px;
+  min-height: 300px;
 }
 
 .project-container .project-content {
-  padding: 5px 15px 15px 15px;
+  padding: 10px 20px 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .project-container .project-content .project-title {}
 .project-container .project-content .project-description {
@@ -401,6 +407,21 @@ button {
   margin-top: 7px;
   font-size: 14px;
 }
+.project-container .project-content .project-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 5px;
+  flex: 1;
+}
+.project-container .project-content .project-buttons button {
+  border: none;
+  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  max-height: 39px;
+  margin-top: auto;
+}
+
 @media (max-width: 768px) {
   .projects-sub-section .portfolio-section-row ul li {
     width: 425px;

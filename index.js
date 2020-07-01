@@ -70,11 +70,15 @@
       // content
       const title = `<h3 class="project-title">${project.title}</h3>`;
       const description = `<p class="project-description">${project.description}</p>`;
-      const content = `<div class="project-content">${title}${description}</div>`
+      const liveButton = `<button class="project-live-button dark-blue-bg white-font">view it live</button>`;
+      const codeButton = `<button class="project-code-button white-bg dark-blue-font">see the code</button>`;
+      const buttons = `<div class="project-buttons">${liveButton}${codeButton}</div>`;
+      const content = `<div class="project-content">${title}${description}${buttons}</div>`
 
       // project card
       const container = `<div class="project-container">${image}${content}</div>`;
       const cell = `<li class="projects-section-cell" data-index="${index}">${container}</li>`;
+
 
       projectsGrid.append(cell);
     });
