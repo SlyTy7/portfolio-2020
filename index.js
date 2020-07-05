@@ -142,6 +142,7 @@
     addWindowScrollListener();
     addNavButtonListener();
     addHeroButtonListener();
+    addResumeButtonListener();
   };
 
   const addWindowScrollListener = () => {
@@ -210,6 +211,17 @@
       });
 
       e.preventDefault();
+    });
+  };
+
+  const addResumeButtonListener = () => {
+    const button = $("#resume-button");
+
+    button.on("click", e => {
+      window.open('./assets/tyler-west-resume.pdf', '_blank', 'fullscreen=yes');
+
+      e.preventDefault();
+      return false;
     });
   };
 

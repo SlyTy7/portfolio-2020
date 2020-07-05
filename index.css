@@ -240,7 +240,16 @@ button {
   border: solid #ffffff 2px;
   margin : 10px auto;
 }
-.hero-section .heading-container .bottom-button {}
+.hero-section .heading-container .bottom-button {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 468px;
+}
+@media (max-width: 425px) {
+  .hero-section .heading-container .bottom-button {
+    flex-direction: column;
+  }
+}
 .hero-section .heading-container button {
   color: #ffffff;
   background-color: transparent;
@@ -253,6 +262,12 @@ button {
   cursor: pointer;
 }
 .hero-section .heading-container button:focus {}
+.hero-section .heading-container button#resume-button {
+  background: #557a95;
+  border: solid #557a95 2px;
+  cursor: pointer;
+}
+
 
 /*=== hero heading animations ===*/
 @keyframes slideUp {
@@ -302,9 +317,34 @@ button {
   animation-fill-mode: forwards;
   transform: translate(0, calc(-100% - 30px));
   margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
 }
-
-
+.hero-section .heading-container .bottom-button button#resume-button {
+  animation: slideDown .6s;
+  animation-delay: 2.55s;
+  animation-fill-mode: forwards;
+  transform: translate(0, calc(-100% - 30px));
+  margin-top: 20px;
+  z-index: 90;
+}
+@media (max-width: 468px) {
+  .hero-section .heading-container .bottom-button button {
+    animation: slideDown .6s;
+    animation-delay: 1.95s;
+    animation-fill-mode: forwards;
+    transform: translate(0, calc(-100% - 30px));
+    margin-top: 20px;
+  }
+  .hero-section .heading-container .bottom-button button#resume-button {
+    animation: slideDown .6s;
+    animation-delay: 2.55s;
+    animation-fill-mode: forwards;
+    transform: translate(0, calc(-100% - 83px));
+    margin-top: 20px;
+  }
+}
 /*=== about section ===*/
 .about-section {
   display: flex;
