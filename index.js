@@ -106,7 +106,7 @@
       {"github" : "https://github.com/SlyTy7"},
       {"email" : "mailto:tylerwest.dev@gmail"},
       {"phone" : "tel:5107363210"},
-      {"codepen" : "https://codepen.io/SlyTy7"}
+      {"resume": "./assets/tyler-west-resume.pdf"}
     ];
   };
 
@@ -121,13 +121,15 @@
       if(link.email) buttonLink = link.email;
       if(link.phone) buttonLink = link.phone;
       if(link.codepen) buttonLink = link.codepen;
+      if(link.resume) buttonLink = link.resume;
 
       let buttonIcon = "";
       if(link.github) buttonIcon = `<i class="fab fa-github dark-gray-font"></i>`;
       if(link.linkedin) buttonIcon = `<i class="fab fa-linkedin dark-gray-font"></i>`;
-      if(link.email) buttonIcon = `<i class="fas fa-envelope-open dark-gray-font"></i>`;
-      if(link.phone) buttonIcon = `<i class="fas fa-mobile-alt dark-gray-font"></i>`;
+      if(link.email) buttonIcon = `<i class="fas fa-envelope dark-gray-font"></i>`;
+      if(link.phone) buttonIcon = `<i class="fas fa-phone dark-gray-font"></i>`;
       if(link.codepen) buttonIcon = `<i class="fab fa-codepen dark-gray-font"></i>`;
+      if(link.resume) buttonIcon = `<i class="fas fa-file dark-gray-font"></i>`;
 
       const button = `<a href="${buttonLink}" target="_blank" rel="noopener" class="white-bg">${buttonIcon}</a>`;
 
