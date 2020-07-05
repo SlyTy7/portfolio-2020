@@ -106,7 +106,7 @@
       {"github" : "https://github.com/SlyTy7"},
       {"email" : "mailto:tylerwest.dev@gmail"},
       {"phone" : "tel:5107363210"},
-      {"resume": "./assets/tyler-west-resume.pdf"}
+      {"resume": "./assets/tyler-west-resume.PDF"}
     ];
   };
 
@@ -218,7 +218,7 @@
     const button = $("#resume-button");
 
     button.on("click", e => {
-      window.open('../assets/tyler-west-resume.pdf', '_blank', 'fullscreen=yes');
+      window.open('./assets/tyler-west-resume.PDF', '_blank', 'fullscreen=yes');
 
       e.preventDefault();
       return false;
