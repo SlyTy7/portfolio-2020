@@ -23,7 +23,15 @@
         "links": {
           "live_url": "https://slyty7.github.io/clock/",
           "code_url": "https://github.com/SlyTy7/clock",
-        }
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "jQuery",
+          "Git",
+          "Github"
+        ]
       },
       {
         "title": "SpotOn",
@@ -84,6 +92,11 @@
       const title = `<h3 class="project-title">${project.title}</h3>`;
       const description = `<p class="project-description">${project.description}</p>`;
 
+      // skills
+      let skills = "";
+      if(project.skills) project.skills.forEach(skill => skills += `<p class="project-skill dark-gray-bg white-font">${skill}</p>`);
+      let skillsContainer = `<div class="project-skills-container">${skills}</div>`;
+
       // links
       let liveButton = "";
       let codeButton = "";
@@ -92,7 +105,7 @@
       const buttons = `<div class="project-buttons">${liveButton}${codeButton}</div>`;
 
       // card
-      const content = `<div class="project-content">${title}${description}${buttons}</div>`
+      const content = `<div class="project-content">${title}${description}${skillsContainer}${buttons}</div>`
       const container = `<div class="project-container">${image}${content}</div>`;
       const cell = `<li class="projects-section-cell" data-index="${index}">${container}</li>`;
 

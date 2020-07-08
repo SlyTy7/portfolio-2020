@@ -460,6 +460,21 @@ button {
   margin-top: 7px;
   font-size: 14px;
 }
+.project-container .project-content .project-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 10px 0px 10px;
+}
+.project-container .project-content .project-skill {
+  margin: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 25px;
+  min-width: 40px;
+  align-items: center;
+}
 .project-container .project-content .project-buttons {
   display: flex;
   flex-direction: row;
