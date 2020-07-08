@@ -36,7 +36,11 @@
       },
       {
         "title": "SpotOn",
-        "description": "",
+        "description": `As the only front end developer on my team, I became well versed
+          in many aspects. I built a HUBL framework that enabled the marketing team to make
+          simple changes to the website, emails, or blog; an entirely automated email campaign
+          based on last purchase, new customer, time as a customer, etc; and some internal
+          tools and dashboards with React.js, that sent API calls to our internal database.`,
         "thumb_url": "./assets/projects/spoton-screenshot-scaled.png",
         "links": {
           "live_url": "https://www.spoton.com/"
