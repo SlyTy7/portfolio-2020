@@ -50,9 +50,11 @@
           "Zapier",
           "jQuery",
           "Git",
+          "SEO",
           "Hubspot",
           "HUBL",
           "HubDB",
+          "REST API",
           "Responsive Design"
         ]
       },
@@ -63,7 +65,18 @@
         "links": {
           "live_url": "https://slyty7.github.io/MovieFind/",
           "code_url": "https://github.com/SlyTy7/MovieFind",
-        }
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "JavaScript",
+          "jQuery",
+          "Git",
+          "Github",
+          "REST API",
+          "Responsive Design"
+        ]
       },
       {
         "title": "DrumKit.js",
@@ -72,7 +85,16 @@
         "links": {
           "live_url": "https://slyty7.github.io/drums/",
           "code_url": "https://github.com/SlyTy7/drums",
-        }
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "JavaScript",
+          "Git",
+          "Github",
+          "Responsive Design"
+        ]
       },
       {
         "title": "React To-Do",
@@ -81,7 +103,16 @@
         "links": {
           "live_url": "https://slyty7.github.io/react-todo/",
           "code_url": "https://github.com/SlyTy7/react-todo",
-        }
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React.js",
+          "Git",
+          "Github",
+          "Responsive Design"
+        ]
       },
       {
         "title": "The GLD Shop",
@@ -89,7 +120,16 @@
         "thumb_url": "./assets/projects/gldshop-screenshot-scaled.png",
         "links": {
           "live_url": "https://www.thegldshop.com/"
-        }
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "jQuery",
+          "SEO",
+          "Shopify",
+          "Responsive Design"
+        ]
       }
     ];
   };
