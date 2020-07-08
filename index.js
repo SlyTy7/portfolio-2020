@@ -18,7 +18,8 @@
     window.portfolio.projects = [
       {
         "title": "Clock.js",
-        "description": "A simple digital clock made with vanilla javascript.",
+        "description": `A simple digital clock made with vanilla javascript. It shows the
+          current time, date, and day of the week.`,
         "thumb_url": "./assets/projects/clock-screenshot-scaled.png",
         "links": {
           "live_url": "https://slyty7.github.io/clock/",
@@ -64,7 +65,8 @@
       },
       {
         "title": "MovieFind",
-        "description": "A web application that enables you to search for movies and get information about the movie.",
+        "description": `A web application that searches movies by a title query and returns
+          some basic information on the movie.`,
         "thumb_url": "./assets/projects/moviefind-screenshot-scaled.png",
         "links": {
           "live_url": "https://slyty7.github.io/MovieFind/",
@@ -74,6 +76,8 @@
           "HTML",
           "CSS",
           "Bootstrap",
+          "Bootswatch",
+          "Axios",
           "JavaScript",
           "jQuery",
           "Git",
