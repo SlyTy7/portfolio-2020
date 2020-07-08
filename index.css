@@ -497,7 +497,7 @@ button {
   border-radius: 3px;
   text-decoration: none;
   flex: 1;
-  max-width: 40%;
+  max-width: 45%;
 }
 .project-container .project-content .project-buttons a:hover {
   cursor: pointer;
