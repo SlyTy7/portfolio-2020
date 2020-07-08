@@ -478,6 +478,7 @@ button {
 .project-container .project-content .project-buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
   padding: 0 5px;
@@ -495,6 +496,8 @@ button {
   text-transform: uppercase;
   border-radius: 3px;
   text-decoration: none;
+  flex: 1;
+  max-width: 40%;
 }
 .project-container .project-content .project-buttons a:hover {
   cursor: pointer;
@@ -520,8 +523,14 @@ button {
   }
 }
 @media (max-width: 468px) {
+  .project-container .project-content .project-buttons {
+    flex-direction: column;
+  }
   .project-container .project-content .project-buttons a {
     font-size: 12px;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
