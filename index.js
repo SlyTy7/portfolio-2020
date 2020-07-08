@@ -30,7 +30,8 @@
           "JavaScript",
           "jQuery",
           "Git",
-          "Github"
+          "Github",
+          "Responsive Design"
         ]
       },
       {
@@ -39,7 +40,21 @@
         "thumb_url": "./assets/projects/spoton-screenshot-scaled.png",
         "links": {
           "live_url": "https://www.spoton.com/"
-        }
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React.js",
+          "Node.js",
+          "Zapier",
+          "jQuery",
+          "Git",
+          "Hubspot",
+          "HUBL",
+          "HubDB",
+          "Responsive Design"
+        ]
       },
       {
         "title": "MovieFind",
