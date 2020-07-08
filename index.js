@@ -83,6 +83,31 @@
         ]
       },
       {
+        "title": "CoinRate",
+        "description": `A simple web app that enables the user to check the current price of BitCoin
+          in USD, and its rate history over the past 30 days. I originally built this to learn more
+          about Chart.js and the Coin Desk API. Chart.js has had some MAJOR updates since this was built,
+          so I'll probably come back to this for a facelift.`,
+        "thumb_url": "./assets/projects/coinrate-screenshot-scaled.png",
+        "links": {
+          "live_url": "https://slyty7.github.io/CoinRate/",
+          "code_url": "https://github.com/SlyTy7/CoinRate",
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Bootswatch",
+          "JavaScript",
+          "jQuery",
+          "ChartJS",
+          "Coin Desk API",
+          "Git",
+          "Github",
+          "Responsive Design"
+        ]
+      },
+      {
         "title": "DrumKit.js",
         "description": "A small drum kit made with JavaScript.",
         "thumb_url": "./assets/projects/drums-screenshot-scaled.png",
