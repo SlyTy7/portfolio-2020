@@ -305,7 +305,6 @@ button {
   transform: translate(0, -100%);
 }
 
-
 .hero-section .heading-container hr {
   animation: expand 2s;
   animation-fill-mode: forwards;
@@ -403,8 +402,6 @@ button {
     border-bottom: solid 1px #ddd;
   }
 }
-
-
 
 /*=== projects section ===*/
 .projects-section {
