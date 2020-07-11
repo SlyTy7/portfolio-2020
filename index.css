@@ -2,9 +2,11 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 section {
@@ -33,7 +35,6 @@ section p {
   top: -60px;
 }
 
-
 /*=== typography ===*/
 h1 {
   font-size: 60px;
@@ -42,7 +43,8 @@ h1 {
 h2 {
   font-size: 50px;
   font-weight: 800;
-  text-shadow: 2px 2px 0px #333333, 3px 3px 0px #333333, 1px 1px 0px #333333, 4px 4px 0px #333333;
+  text-shadow: 2px 2px 0px #333333, 3px 3px 0px #333333, 1px 1px 0px #333333,
+    4px 4px 0px #333333;
 }
 p {
   font-size: 16px;
@@ -60,9 +62,8 @@ button {
   border-radius: 3px;
 }
 .font-open-sans {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 
 /*=== color scheme ===*/
 .white-bg {
@@ -108,7 +109,6 @@ button {
   color: #b1a296;
 }
 
-
 /*=== navbar ===*/
 .portfolio-navigation {
   position: fixed;
@@ -116,7 +116,7 @@ button {
   z-index: 1000;
   background-color: transparent;
   color: #ffffff;
-  transition: .4s;
+  transition: 0.4s;
   min-height: 60px;
 }
 /* desktop menu */
@@ -136,7 +136,7 @@ button {
   flex-grow: 1;
   justify-content: flex-end;
 }
-.portfolio-navigation ul.desktop-nav-menu li:nth-child(1){
+.portfolio-navigation ul.desktop-nav-menu li:nth-child(1) {
   flex-grow: 2;
   justify-content: flex-start;
 }
@@ -192,8 +192,10 @@ button {
   margin: 0 auto;
   height: 100%;
 }
-.portfolio-navigation ul.mobile-nav-menu-open {}
-.portfolio-navigation ul.mobile-nav-menu-open li {}
+.portfolio-navigation ul.mobile-nav-menu-open {
+}
+.portfolio-navigation ul.mobile-nav-menu-open li {
+}
 .portfolio-navigation ul.mobile-nav-menu-open li a {
   text-decoration: none;
   color: inherit;
@@ -212,10 +214,10 @@ button {
   }
 }
 
-
 /*=== hero section ===*/
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/kimson-doan-background-scaled.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./assets/kimson-doan-background-scaled.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -238,7 +240,7 @@ button {
   max-width: 400px;
   width: 100%;
   border: solid #ffffff 2px;
-  margin : 10px auto;
+  margin: 10px auto;
 }
 .hero-section .heading-container .bottom-button {
   display: flex;
@@ -254,33 +256,45 @@ button {
   color: #ffffff;
   background-color: transparent;
   border: solid #ffffff 2px;
-  transition: .4s;
+  transition: 0.4s;
 }
 .hero-section .heading-container button:hover {
   background: #b1a296;
   border: solid #b1a296 2px;
   cursor: pointer;
 }
-.hero-section .heading-container button:focus {}
+.hero-section .heading-container button:focus {
+}
 .hero-section .heading-container button#resume-button {
   background: #557a95;
   border: solid #557a95 2px;
   cursor: pointer;
 }
 
-
 /*=== hero heading animations ===*/
 @keyframes slideUp {
-  0% { transform: translate3d(0, 100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 @keyframes slideDown {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 @keyframes expand {
-  0% { width: 0px; }
-  100% { width: 100%; }
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .hero-section .heading-container .top-heading,
 .hero-section .heading-container .bottom-heading,
@@ -290,16 +304,17 @@ button {
   text-align: center;
   width: 100%;
 }
-.hero-section .heading-container .bottom-button {}
+.hero-section .heading-container .bottom-button {
+}
 .hero-section .heading-container .top-heading h1 {
-  animation: slideUp .6s;
-  animation-delay: .75s;
+  animation: slideUp 0.6s;
+  animation-delay: 0.75s;
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, -100%);
 }
 .hero-section .heading-container .bottom-heading h1 {
-  animation: slideDown .6s;
+  animation: slideDown 0.6s;
   animation-delay: 1.35s;
   animation-fill-mode: forwards;
   transform: translate(0, -100%);
@@ -311,7 +326,7 @@ button {
 }
 
 .hero-section .heading-container .bottom-button button {
-  animation: slideDown .6s;
+  animation: slideDown 0.6s;
   animation-delay: 1.95s;
   animation-fill-mode: forwards;
   transform: translate(0, calc(-100% - 30px));
@@ -321,7 +336,7 @@ button {
   z-index: 100;
 }
 .hero-section .heading-container .bottom-button button#resume-button {
-  animation: slideDown .6s;
+  animation: slideDown 0.6s;
   animation-delay: 2.55s;
   animation-fill-mode: forwards;
   transform: translate(0, calc(-100% - 30px));
@@ -330,14 +345,14 @@ button {
 }
 @media (max-width: 468px) {
   .hero-section .heading-container .bottom-button button {
-    animation: slideDown .6s;
+    animation: slideDown 0.6s;
     animation-delay: 1.95s;
     animation-fill-mode: forwards;
     transform: translate(0, calc(-100% - 30px));
     margin-top: 20px;
   }
   .hero-section .heading-container .bottom-button button#resume-button {
-    animation: slideDown .6s;
+    animation: slideDown 0.6s;
     animation-delay: 2.55s;
     animation-fill-mode: forwards;
     transform: translate(0, calc(-100% - 100px));
@@ -361,7 +376,7 @@ button {
   border-radius: 5px;
   position: relative;
   z-index: 100;
-  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  box-shadow: 3px 3px 7px 3px rgba(50, 50, 93, 0.25);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -373,7 +388,7 @@ button {
 .about-sub-section .portfolio-section-row .skills-column i {
   font-size: 40px;
 }
-.about-sub-section .portfolio-section-row .skills-column  h3 {
+.about-sub-section .portfolio-section-row .skills-column h3 {
   margin: 20px auto;
 }
 .about-sub-section .portfolio-section-row .skills-column ul {
@@ -390,7 +405,7 @@ button {
 }
 
 @media (max-width: 768px) {
-  .about-sub-section .portfolio-section-row  {
+  .about-sub-section .portfolio-section-row {
     display: flex;
     flex-direction: column;
     padding: 0 30px;
@@ -424,7 +439,7 @@ button {
 .projects-sub-section .portfolio-section-row ul li {
   min-height: 250px;
   width: 400px;
-  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  box-shadow: 3px 3px 7px 3px rgba(50, 50, 93, 0.25);
   margin: 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -451,7 +466,8 @@ button {
   display: flex;
   flex-direction: column;
 }
-.project-container .project-content .project-title {}
+.project-container .project-content .project-title {
+}
 .project-container .project-content .project-description {
   margin: 0;
   margin-top: 7px;
@@ -483,7 +499,7 @@ button {
 }
 .project-container .project-content .project-buttons a {
   border: none;
-  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  box-shadow: 3px 3px 7px 3px rgba(50, 50, 93, 0.25);
   max-height: 39px;
   margin: auto 0 0 0;
   cursor: pointer;
@@ -498,9 +514,9 @@ button {
 }
 .project-container .project-content .project-buttons a:hover {
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
 }
-.project-container .project-content .project-buttons a:nth-child(2){
+.project-container .project-content .project-buttons a:nth-child(2) {
   margin-left: auto;
 }
 
@@ -531,7 +547,6 @@ button {
   }
 }
 
-
 /*=== testimonial section ===*/
 .testimonials-section {
   padding-bottom: 80px;
@@ -551,7 +566,7 @@ button {
 .testimonials-slide .quote-container {
   padding: 30px 50px;
   max-width: 500px;
-  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  box-shadow: 3px 3px 7px 3px rgba(50, 50, 93, 0.25);
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
@@ -571,13 +586,9 @@ button {
   font-size: 10px;
 }
 
-
-
-
-
 /*=== contact section ===*/
-.contact-section {}
-
+.contact-section {
+}
 
 .contact-section .social-buttons-container {
   display: flex;
@@ -596,9 +607,9 @@ button {
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25)
+  box-shadow: 3px 3px 7px 3px rgba(50, 50, 93, 0.25);
 }
-.contact-section .social-buttons-container a  i {
+.contact-section .social-buttons-container a i {
   font-color: transparent;
 }
 .contact-section .contact-section-form {
@@ -607,7 +618,7 @@ button {
   width: 100%;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 3px 3px 7px 3px rgba(50,50,93,.25);
+  box-shadow: 3px 3px 7px 3px rgba(50, 50, 93, 0.25);
   display: flex;
   flex-direction: column;
 }
@@ -629,9 +640,8 @@ button {
 }
 .contact-section .contact-section-form button:hover {
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
 }
-
 
 .copyright-section {
   padding-bottom: 30px;
@@ -642,7 +652,6 @@ button {
   font-style: italic;
   color: #b9b5bb;
 }
-
 
 /*=== media queries ===*/
 @media (max-width: 768px) {
