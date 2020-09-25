@@ -1,261 +1,270 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172090477-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-172090477-1');
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172090477-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta content="A simple portfolio highlighting the work of Tyler West" name="description">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    <title>Tyler West | Front End Developer</title>
+    gtag('config', 'UA-172090477-1');
+  </script>
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- google font links -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <!-- slick slider links -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <!-- fontawesome links -->
-    <link rel="stylesheet" href="fontawesome/all.min.css"> <!--load all styles -->
-    <!-- index links -->
-    <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta content="A simple portfolio highlighting the work of Tyler West" name="description">
 
-  </head>
-  <body>
-    <!-- NAVIGATION -->
-    <nav class="portfolio-navigation">
-      <ul class="desktop-nav-menu">
-        <li>
-          <a data-target="home-nav-anchor" class="home-link" href="#">
-            <img class="nav-icon" src="./assets/favicons/blue_circle_icon.png" alt="Tyler West">
-          </a>
-        </li>
-        <li>
-          <a data-target="about-nav-anchor" class="nav-link" href="#">About</a>
-        </li>
-        <li>
-          <a data-target="projects-nav-anchor" class="nav-link" href="#">Projects</a>
-        </li>
-        <li>
-          <a data-target="testimonials-nav-anchor" class="nav-link" href="#">Testimonials</a>
-        </li>
-        <li>
-          <a data-target="contact-nav-anchor" class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <ul class="mobile-nav-menu">
-        <li>
-          <a data-target="home-nav-anchor" class="home-link" href="#">
-            <img class="nav-icon" src="./assets/favicons/blue_circle_icon.png" alt="Tyler West">
-          </a>
-        </li>
-        <li>
-          <a data-target="mobile-menu-toggle" class="mobile-menu-toggle" href="#/">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-      <ul class="mobile-nav-menu-open">
-        <li class="mobile-list-item">
-          <a data-target="about-nav-anchor" class="nav-link" href="#">About</a>
-        </li>
-        <li class="mobile-list-item">
-          <a data-target="projects-nav-anchor" class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="mobile-list-item">
-          <a data-target="testimonials-nav-anchor" class="nav-link" href="#">Testimonials</a>
-        </li>
-        <li class="mobile-list-item">
-          <a data-target="contact-nav-anchor" class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- END NAVIGATION -->
+  <title>Tyler West | Front End Developer</title>
 
-    <!-- HERO -->
-    <section class="portfolio-section hero-section section-shadow">
-      <div class="home-nav-anchor nav-anchor"></div>
-      <div class="heading-container">
-        <div class="top-heading">
-          <h1>Tyler West</h1>
-        </div>
-        <hr>
-        <div class="bottom-heading">
-          <h1>Front End Web Developer</h1>
-        </div>
-        <div class="bottom-button">
-          <button id="heading-button" type="button" name="button">View My Work</button>
-          <button id="resume-button" type="button" name="button">My Resume</button>
-        </div>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- google font links -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <!-- slick slider links -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- fontawesome links -->
+  <link rel="stylesheet" href="fontawesome/all.min.css">
+  <!--load all styles -->
+  <!-- index links -->
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="portfolio-navigation">
+    <ul class="desktop-nav-menu">
+      <li>
+        <a data-target="home-nav-anchor" class="home-link" href="#">
+          <img class="nav-icon" src="./assets/favicons/blue_circle_icon.png" alt="Tyler West">
+        </a>
+      </li>
+      <li>
+        <a data-target="about-nav-anchor" class="nav-link" href="#">About</a>
+      </li>
+      <li>
+        <a data-target="projects-nav-anchor" class="nav-link" href="#">Projects</a>
+      </li>
+      <li>
+        <a data-target="testimonials-nav-anchor" class="nav-link" href="#">Testimonials</a>
+      </li>
+      <li>
+        <a data-target="contact-nav-anchor" class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    <ul class="mobile-nav-menu">
+      <li>
+        <a data-target="home-nav-anchor" class="home-link" href="#">
+          <img class="nav-icon" src="./assets/favicons/blue_circle_icon.png" alt="Tyler West">
+        </a>
+      </li>
+      <li>
+        <a data-target="mobile-menu-toggle" class="mobile-menu-toggle" href="#/">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="mobile-nav-menu-open">
+      <li class="mobile-list-item">
+        <a data-target="about-nav-anchor" class="nav-link" href="#">About</a>
+      </li>
+      <li class="mobile-list-item">
+        <a data-target="projects-nav-anchor" class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="mobile-list-item">
+        <a data-target="testimonials-nav-anchor" class="nav-link" href="#">Testimonials</a>
+      </li>
+      <li class="mobile-list-item">
+        <a data-target="contact-nav-anchor" class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- END NAVIGATION -->
+
+  <!-- HERO -->
+  <section class="portfolio-section hero-section section-shadow">
+    <div class="home-nav-anchor nav-anchor"></div>
+    <div class="heading-container">
+      <div class="top-heading">
+        <h1>Tyler West</h1>
       </div>
-    </section>
-    <!-- END HERO -->
+      <hr>
+      <div class="bottom-heading">
+        <h1>Front End Web Developer</h1>
+      </div>
+      <div class="bottom-button">
+        <button id="heading-button" type="button" name="button">View My Work</button>
+        <button id="resume-button" type="button" name="button">My Resume</button>
+      </div>
+    </div>
+  </section>
+  <!-- END HERO -->
 
-    <!-- ABOUT -->
-    <section class="portfolio-section about-section dark-blue-bg white-font">
-      <div class="about-nav-anchor nav-anchor"></div>
-      <div class="portfolio-section-row">
-        <h2>About Me</h2>
-        <p>I'm a front-end web developer who lives and works in San Francisco and specializes in creating fully responsive websites and applications. With a background in marketing and web development, I strive to build innovative solutions with technology.</p>
-        <p>Are you looking for a front-end developer? Take a look at some of my work and send me a message. I'm always open to new opportunities!</p>
-      </div>
-    </section>
-    <section class="portfolio-section about-sub-section white-bg black-font section-shadow">
-      <div class="portfolio-section-row white-bg">
-        <div class="skills-column">
-          <i class="fas fa-code light-blue-font"></i>
-          <h3>Languages & Frameworks</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Bootstrap</li>
-            <li>jQuery</li>
-            <li>Sass</li>
-          </ul>
-        </div>
-        <div class="skills-column">
-          <i class="fas fa-tools light-blue-font"></i>
-          <h3>Development Tools</h3>
-          <ul>
-            <li>Atom</li>
-            <li>Git</li>
-            <li>Github</li>
-            <li>Terminal</li>
-            <li>Postman</li>
-            <li>Hubspot</li>
-            <li>Wordpress</li>
-            <li>Zapier</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- END ABOUT -->
-
-    <!-- PROJECTS -->
-    <section class="portfolio-section projects-section sand-bg white-font">
-      <div class="projects-nav-anchor nav-anchor"></div>
-      <div class="portfolio-section-row">
-        <h2>My Recent Work</h2>
-        <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser. Take a look at some of my latest work.</p>
-      </div>
-    </section>
-    <section class="portfolio-section projects-sub-section white-bg black-font section-shadow">
-      <div class="portfolio-section-row">
-        <ul class="projects-section-grid"></ul>
-      </div>
-    </section>
-    <!-- END PROJECTS -->
-
-    <!-- TESTIMONIALS -->
-    <!-- TODO: save images locally and host. If link breaks, will lose images -->
-    <section class="portfolio-section testimonials-section dark-blue-bg white-font">
-      <div class="testimonials-nav-anchor nav-anchor"></div>
-      <div class="portfolio-section-row">
-        <h2>Testimonials</h2>
-        <p>Here's what some people had to say about working with me.</p>
-      </div>
-    </section>
-    <section class="portfolio-section testimonials-sub-section white-bg black-font section-shadow">
-      <div class="portfolio-section-row">
-        <ul class="testimonials-slider">
-          <li class="testimonials-slide">
-            <div class="quote-container white-bg">
-              <img src="https://media-exp1.licdn.com/dms/image/C5603AQEJdjRS7BGQSw/profile-displayphoto-shrink_100_100/0?e=1597276800&v=beta&t=tRVHXs1PKXW8OJNConl2uVAncTZmi8IQlOQDb8IVtsg" alt="Matt Brody">
-              <p class="quote">"Tyler has been great to work with. He's fast on the take, super into learning new skills (an absolute must in web development), and great at breaking down difficult coding concepts to less experienced coders."</p>
-              <p class="author">Matt Brody</p>
-            </div>
-          </li>
-          <li class="testimonials-slide">
-            <div class="quote-container white-bg">
-              <img src="https://media-exp1.licdn.com/dms/image/C4E03AQECUkvpp9apMQ/profile-displayphoto-shrink_100_100/0?e=1597276800&v=beta&t=1xakOZ8BkG4WIg4bYOfEckskxtRzBBAHXLuTJ4z3LRU" alt="Nicholas Saephanh">
-              <p class="quote">"Tyler is an extremely intelligent and personable person. Consistently proves his grit over other developers in sheer efficiency. The perfect guy to hire as a developer because of how fast everything changes. You will never have to worry about what he knows because he'll learn it!"</p>
-              <p class="author">Nicholas Saephanh</p>
-            </div>
-          </li>
-          <li class="testimonials-slide">
-            <div class="quote-container white-bg">
-              <img src="https://media-exp1.licdn.com/dms/image/C5603AQEjQ1lgZ1s6gQ/profile-displayphoto-shrink_100_100/0?e=1597276800&v=beta&t=0tGDeGmxjtmok9aLiOY7IxiE_UHCyFy49_RINnsEBBQ" alt="Arian Zargaran Florez">
-              <p class="quote">"I am convinced that Tyler is the ideal candidate to be part of a large-scale Web project and that we will meet professionally, again soon in the future."</p>
-              <p class="author">Arian Zargaran Florez</p>
-            </div>
-          </li>
+  <!-- ABOUT -->
+  <section class="portfolio-section about-section dark-blue-bg white-font">
+    <div class="about-nav-anchor nav-anchor"></div>
+    <div class="portfolio-section-row">
+      <h2>About Me</h2>
+      <p>I'm a front-end web developer who lives and works in San Francisco and specializes in creating fully responsive websites and applications. With a background in marketing and web development, I strive to build innovative solutions with
+        technology.</p>
+      <p>Are you looking for a front-end developer? Take a look at some of my work and send me a message. I'm always open to new opportunities!</p>
+    </div>
+  </section>
+  <section class="portfolio-section about-sub-section white-bg black-font section-shadow">
+    <div class="portfolio-section-row white-bg">
+      <div class="skills-column">
+        <i class="fas fa-code light-blue-font"></i>
+        <h3>Languages & Frameworks</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>Sass</li>
         </ul>
       </div>
-    </section>
-    <!-- END TESTIMONIALS -->
-
-    <!-- CONTACT -->
-    <section class="portfolio-section contact-section dark-gray-bg white-font">
-      <div class="contact-nav-anchor nav-anchor"></div>
-      <div class="portfolio-section-row">
-        <h2>Contact Me</h2>
-        <p>Shoot me a message! Or feel free to check out my links below.</p>
-        <div class="social-buttons-container"></div>
-        <form class="contact-section-form white-bg black-font" action="https://formspree.io/xzbjgjvb" method="POST">
-          <label>
-            Name:
-            <input type="text" name="name">
-          </label>
-          <label>
-            Email:
-            <input type="text" name="_replyto">
-          </label>
-          <label>
-            Phone:
-            <input type="number" name="phone">
-          </label>
-          <label>
-            Message:
-            <textarea name="message"></textarea>
-          </label>
-
-          <button type="submit" class="dark-blue-bg white-font">Send</button>
-        </form>
+      <div class="skills-column">
+        <i class="fas fa-tools light-blue-font"></i>
+        <h3>Development Tools</h3>
+        <ul>
+          <li>Atom</li>
+          <li>Git</li>
+          <li>Github</li>
+          <li>Terminal</li>
+          <li>Postman</li>
+          <li>Hubspot</li>
+          <li>Wordpress</li>
+          <li>Zapier</li>
+        </ul>
       </div>
-    </section>
-    <!-- END CONTACT -->
+    </div>
+  </section>
+  <!-- END ABOUT -->
 
-    <!-- FOOTER -->
-    <section class="portfolio-section copyright-section dark-gray-bg white-font">
-      <p class="copyright-date">&copy; Copyright 2015 - 2020.</p>
-      <p class="copyright-copy">All Rights Reserved. Built and designed by <span class="white-font">Tyler West.</span></p>
-    </section>
-    <!-- END FOOTER -->
+  <!-- PROJECTS -->
+  <section class="portfolio-section projects-section sand-bg white-font">
+    <div class="projects-nav-anchor nav-anchor"></div>
+    <div class="portfolio-section-row">
+      <h2>My Recent Work</h2>
+      <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser. Take a look at some of my latest work.</p>
+    </div>
+  </section>
+  <section class="portfolio-section projects-sub-section white-bg black-font section-shadow">
+    <div class="portfolio-section-row">
+      <ul class="projects-section-grid"></ul>
+    </div>
+  </section>
+  <!-- END PROJECTS -->
+
+  <!-- TESTIMONIALS -->
+  <!-- TODO: save images locally and host. If link breaks, will lose images -->
+  <section class="portfolio-section testimonials-section dark-blue-bg white-font">
+    <div class="testimonials-nav-anchor nav-anchor"></div>
+    <div class="portfolio-section-row">
+      <h2>Testimonials</h2>
+      <p>Here's what some people had to say about working with me.</p>
+    </div>
+  </section>
+  <section class="portfolio-section testimonials-sub-section white-bg black-font section-shadow">
+    <div class="portfolio-section-row">
+      <ul class="testimonials-slider">
+        <li class="testimonials-slide">
+          <div class="quote-container white-bg">
+            <img src="./assets/testimonials/matt.jpeg" alt="Matt Brody">
+            <p class="quote">"Tyler has been great to work with. He's fast on the take, super into learning new skills (an absolute must in web development), and great at breaking down difficult coding concepts to less experienced coders."</p>
+            <p class="author">Matt Brody</p>
+          </div>
+        </li>
+        <li class="testimonials-slide">
+          <div class="quote-container white-bg">
+            <img src="./assets/testimonials/nick.jpeg" alt="Nicholas Saephanh">
+            <p class="quote">"Tyler is an extremely intelligent and personable person. Consistently proves his grit over other developers in sheer efficiency. The perfect guy to hire as a developer because of how fast everything changes. You will
+              never have to worry about what he knows because he'll learn it!"</p>
+            <p class="author">Nicholas Saephanh</p>
+          </div>
+        </li>
+        <li class="testimonials-slide">
+          <div class="quote-container white-bg">
+            <img src="./assets/testimonials/arian.jpeg" alt="Arian Zargaran Florez">
+            <p class="quote">"I am convinced that Tyler is the ideal candidate to be part of a large-scale Web project and that we will meet professionally, again soon in the future."</p>
+            <p class="author">Arian Zargaran Florez</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- END TESTIMONIALS -->
+
+  <!-- CONTACT -->
+  <section class="portfolio-section contact-section dark-gray-bg white-font">
+    <div class="contact-nav-anchor nav-anchor"></div>
+    <div class="portfolio-section-row">
+      <h2>Contact Me</h2>
+      <p>Shoot me a message! Or feel free to check out my links below.</p>
+      <div class="social-buttons-container"></div>
+      <form class="contact-section-form white-bg black-font" action="https://formspree.io/xzbjgjvb" method="POST">
+        <label>
+          Name:
+          <input type="text" name="name">
+        </label>
+        <label>
+          Email:
+          <input type="text" name="_replyto">
+        </label>
+        <label>
+          Phone:
+          <input type="number" name="phone">
+        </label>
+        <label>
+          Message:
+          <textarea name="message"></textarea>
+        </label>
+
+        <button type="submit" class="dark-blue-bg white-font">Send</button>
+      </form>
+    </div>
+  </section>
+  <!-- END CONTACT -->
+
+  <!-- FOOTER -->
+  <section class="portfolio-section copyright-section dark-gray-bg white-font">
+    <p class="copyright-date">&copy; Copyright 2015 - 2020.</p>
+    <p class="copyright-copy">All Rights Reserved. Built and designed by <span class="white-font">Tyler West.</span></p>
+  </section>
+  <!-- END FOOTER -->
 
 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <!-- slick.js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- index.js -->
-    <script src="index.js" charset="utf-8"></script>
-  </body>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- slick.js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- index.js -->
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
 </html>
